@@ -22670,17 +22670,29 @@ header .maNavbar button:hover {
 }
 section:nth-of-type(1) {
   background-color: #f5ebdf;
-  background-image: url("../../public/img/collect/one-page-slider-01.png");
 }
 section:nth-of-type(1) .s1navbarGauche p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
 section:nth-of-type(1) .s1ContenuSac button {
-  width: 40%;
   border: 2px solid white;
   color: white;
   background-color: #123;
+}
+section:nth-of-type(2) button {
+  color: #b4b4b4;
+  background-color: transparent;
+  border: none;
+}
+section:nth-of-type(2) .monTrait {
+  height: 30px;
+  width: 1px;
+  background-color: #b4b4b4;
+}
+section:nth-last-of-type(3) .maCollection {
+  margin: 0;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
