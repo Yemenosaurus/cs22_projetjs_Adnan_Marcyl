@@ -5,9 +5,10 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
 
 body
-
-
+    margin: 0
+    width: 100%
 header
+    background-color: rgb(245,235,223)
     .maNavbar
         button
             border: none
@@ -16,4 +17,21 @@ header
                 font-weight: underline
                 color: red
     .maNavProfil
-    hr
+
+section
+    &:nth-of-type(1)
+        background-color: rgb(245,235,223)
+        background-image: url('../../public/img/collect/one-page-slider-01.png')
+        .s1navbarGauche
+            p
+                writing-mode: vertical-rl
+                text-orientation: mixed
+        .s1Img
+            img
+        .s1ContenuSac
+            button
+                width: 40%
+                border: 2px solid white
+                color: white
+                background-color: #123
+                
