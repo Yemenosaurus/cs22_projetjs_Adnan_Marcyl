@@ -22709,5 +22709,19 @@ section:nth-of-type(3) button {
   color: white;
   border: none;
 }
+section:nth-of-type(5) {
+  background-color: #f5ebdf;
+}
+section:nth-of-type(5) .carousel-inner {
+  width: 300px;
+}
+section:nth-of-type(5) .carousel-inner .divTestiImg img {
+  border-radius: 50%;
+  width: 20%;
+}
+section:nth-of-type(5) .carousel-inner .divFormeMsg {
+  background-color: #fffffff5;
+  align-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
