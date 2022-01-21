@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  src: url("../../public/fonts/Poppins/Poppins-Thin.ttf");
+}
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -22652,6 +22656,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  font-family: "Poppins";
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -22749,6 +22757,20 @@ section:nth-of-type(7) .contactForum .form-group input {
 }
 section:nth-of-type(7) .contactForum form button {
   border: 0;
+}
+
+footer {
+  color: #c9c6c6;
+  background-color: #252525e7;
+}
+footer input {
+  background-color: #5e5e5ed7;
+  border: 0;
+  width: 350px;
+}
+footer .bgFoot {
+  background-color: #1b1b1b;
+  color: #959999;
 }
 
 /*# sourceMappingURL=style.css.map */
