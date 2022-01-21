@@ -22726,5 +22726,29 @@ section:nth-of-type(6) button {
   color: white;
   border: 0;
 }
+section:nth-of-type(7) {
+  width: 100%;
+}
+section:nth-of-type(7) .contactGauche {
+  background-image: url("../../public/img/collect/one-page-img-04.jpg");
+  background-attachment: cover;
+}
+section:nth-of-type(7) .contactLoc {
+  background-color: #f5ebdf;
+}
+section:nth-of-type(7) .contactForum {
+  background-image: url("../../public/img/fashion/fashion-brand-parallax-bg.jpg");
+  background-attachment: cover;
+}
+section:nth-of-type(7) .contactForum .form-group {
+  border-bottom: 1px solid #a0a4a8a2;
+}
+section:nth-of-type(7) .contactForum .form-group input {
+  background-color: transparent;
+  border: 0;
+}
+section:nth-of-type(7) .contactForum form button {
+  border: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
