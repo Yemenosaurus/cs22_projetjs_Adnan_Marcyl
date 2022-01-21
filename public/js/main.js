@@ -164,3 +164,528 @@ imgLigneDeux5.appendChild(h625);
 let p625 = document.createElement('p');
 p625.textContent = "p";
 imgLigneDeux5.appendChild(p625);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // ## SECTION TESTIMONIALS
+// let sectionTesti = document.getElementsByClassName('sectionTestimonials')[0];
+// sectionTesti.style.backgroundColor = "rgb(245,235,223)"
+
+// let divCont2 = document.createElement('div');
+// divCont2.classList = "container-fluid";
+// sectionTesti.appendChild(divCont2);
+
+// let divTesti = document.createElement('div');
+// divTesti.classList = "d-flex flex-column justify-content-center align-items-center p-5";
+// divCont2.appendChild(divTesti);
+
+// let h4Testi = document.createElement('h4');
+// h4Testi.textContent = "Testimonial";
+// divTesti.appendChild(h4Testi);
+// let pTesti = document.createElement('p');
+// pTesti.textContent = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eaque sequi repellat!";
+// divTesti.appendChild(pTesti);
+
+// let colTesti = document.createElement('div');
+// colTesti.classList = "col-12 p-5";
+// divTesti.appendChild(colTesti);
+
+// let divCarousel = document.createElement('div');
+// divCarousel.classList = "carousel slide";
+// divCarousel.setAttribute.id = "carouselExampleControls"
+// divCarousel.setAttribute('data-bs-ride', 'carousel')
+// colTesti.appendChild(divCarousel);
+
+// let divCarouselInner = document.createElement('div');
+// divCarouselInner.classList = "carousel-inner d-flex flex-row text-center justify-content-center align-items-center";
+// divCarousel.appendChild(divCarouselInner);
+
+// // ITEM ACTIVE
+// let divCarouselItemActive = document.createElement('div');
+// divCarouselItemActive.classList = "carousel-item active";
+// divCarouselInner.appendChild(divCarouselItemActive);
+
+// let row = document.createElement('row');
+// row.classList = "row";
+// divCarouselItemActive.appendChild(row);
+
+
+
+// // ACTIVE - COL 4 (1)
+// let col41 = document.createElement('div');
+// col41.classList = "col-4";
+// row.appendChild(col41);
+
+// let card = document.createElement('div');
+// card.classList = "card p-3";
+// col41.appendChild(card);
+
+// let divFormeMsg = document.createElement('div');
+// divFormeMsg.style.backgroundColor = "#fffffff5";
+// divFormeMsg.classList = "divFormeMsg fs-7 mb-3";
+// divFormeMsg.style.alignContent = "center"
+// card.appendChild(divFormeMsg);
+
+// let pFormeMsg11 = document.createElement("p");
+// pFormeMsg11.classList = "fs-6";
+// pFormeMsg11.textContent = "WE LOVE";
+// pFormeMsg11.style.fontWeight = "bold";
+// divFormeMsg.appendChild(pFormeMsg11);
+// let pFormeMsg12 = document.createElement("p");
+// pFormeMsg12.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg.appendChild(pFormeMsg12);
+
+// let divTestiImg = document.createElement('div');
+// divTestiImg.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col41.appendChild(divTestiImg);
+
+// let divTestiImgFlex = document.createElement('div');
+// divTestiImgFlex.classList = "d-flex flex-row justify-content-center align-items-center";
+// col41.appendChild(divTestiImgFlex);
+
+// // IN
+// let imgActiveItem = document.createElement('img');
+// imgActiveItem.style.borderRadius = "50%";
+// imgActiveItem.style.width = "20%";
+// imgActiveItem.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem.classList = "d-block mx-2"
+// divTestiImgFlex.appendChild(imgActiveItem);
+
+// let TestiFlexText = document.createElement('div');
+// TestiFlexText.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex.appendChild(TestiFlexText);
+
+// let h6TestiText = document.createElement('h6');
+// h6TestiText.textContent = "Mattie Stepanek";
+// h6TestiText.classList = "my-n1";
+// let pTestiText = document.createElement('p');
+// pTestiText.textContent = "Manager";
+// pTestiText.classList = "text-secondary my-1";
+// TestiFlexText.appendChild(h6TestiText);
+// TestiFlexText.appendChild(pTestiText);
+
+
+
+
+
+
+
+// // ACTIVE - COL 4 (2)
+// let col42 = document.createElement('div');
+// col42.classList = "col-4";
+// row.appendChild(col42);
+
+// let card2 = document.createElement('div');
+// card2.classList = "card p-3";
+// col42.appendChild(card2);
+
+// let divFormeMsg2 = document.createElement('div');
+// divFormeMsg2.style.backgroundColor = "#fffffff5";
+// divFormeMsg2.classList = "divFormeMsg fs-7 mb-3";
+// divFormeMsg2.style.alignContent = "center"
+// card2.appendChild(divFormeMsg2);
+
+// let pFormeMsg21 = document.createElement("p");
+// pFormeMsg21.classList = "fs-6";
+// pFormeMsg21.textContent = "WE LOVE";
+// pFormeMsg21.style.fontWeight = "bold";
+// divFormeMsg2.appendChild(pFormeMsg21);
+// let pFormeMsg22 = document.createElement("p");
+// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg2.appendChild(pFormeMsg22);
+
+// let divTestiImg2 = document.createElement('div');
+// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col42.appendChild(divTestiImg2);
+
+// let divTestiImgFlex2 = document.createElement('div');
+// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
+// col42.appendChild(divTestiImgFlex2);
+
+// // IN
+// let imgActiveItem2 = document.createElement('img');
+// imgActiveItem2.style.borderRadius = "50%";
+// imgActiveItem2.style.width = "20%";
+// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem2.classList = "d-block mx-2"
+// divTestiImgFlex2.appendChild(imgActiveItem2);
+
+// let TestiFlex2 = document.createElement('div');
+// TestiFlex2.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex2.appendChild(TestiFlex2);
+
+// let h6TestiText2 = document.createElement('h6');
+// h6TestiText2.textContent = "Mattie Stepanek";
+// h6TestiText2.classList = "my-n1";
+// let pTestiText2 = document.createElement('p');
+// pTestiText2.textContent = "Manager";
+// pTestiText2.classList = "text-secondary my-1";
+// TestiFlex2.appendChild(h6TestiText2);
+// TestiFlex2.appendChild(pTestiText2);
+
+
+
+
+
+
+
+
+// // ACTIVE - COL 4 (3)
+// let col43 = document.createElement('div');
+// col43.classList = "col-4";
+// row.appendChild(col43);
+
+// let card3 = document.createElement('div');
+// card3.classList = "card p-3";
+// col43.appendChild(card3);
+
+// let divFormeMsg3 = document.createElement('div');
+// divFormeMsg3.style.backgroundColor = "#fffffff5";
+// divFormeMsg3.classList = "divFormeMsg fs-7 mb-3";
+// divFormeMsg3.style.alignContent = "center"
+// card3.appendChild(divFormeMsg3);
+
+// let pFormeMsg31 = document.createElement("p");
+// pFormeMsg31.classList = "fs-6";
+// pFormeMsg31.textContent = "WE LOVE";
+// pFormeMsg31.style.fontWeight = "bold";
+// divFormeMsg3.appendChild(pFormeMsg31);
+// let pFormeMsg32 = document.createElement("p");
+// pFormeMsg32.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg3.appendChild(pFormeMsg32);
+
+// let divTestiImg3 = document.createElement('div');
+// divTestiImg3.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col43.appendChild(divTestiImg3);
+
+// let divTestiImgFlex3 = document.createElement('div');
+// divTestiImgFlex3.classList = "d-flex flex-row justify-content-center align-items-center";
+// col43.appendChild(divTestiImgFlex3);
+
+// // IN
+// let imgActiveItem3 = document.createElement('img');
+// imgActiveItem3.style.borderRadius = "50%";
+// imgActiveItem3.style.width = "20%";
+// imgActiveItem3.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem3.classList = "d-block mx-2"
+// divTestiImgFlex3.appendChild(imgActiveItem3);
+
+// let TestiFlex3 = document.createElement('div');
+// TestiFlex3.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex3.appendChild(TestiFlex3);
+
+// let h6TestiText3 = document.createElement('h6');
+// h6TestiText3.textContent = "Mattie Stepanek";
+// h6TestiText3.classList = "my-n1";
+// let pTestiText3 = document.createElement('p');
+// pTestiText3.textContent = "Manager";
+// pTestiText3.classList = "text-secondary my-1";
+// TestiFlex3.appendChild(h6TestiText3);
+// TestiFlex3.appendChild(pTestiText3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // ACTIVE - COL 4 (2)
+// let col42 = document.createElement('div');
+// col42.classList = "col-4";
+// row.appendChild(col42);
+
+// let card2 = document.createElement('div');
+// card2.classList = "card p-3";
+// col42.appendChild(card2);
+
+// let divFormeMsg2 = document.createElement('div');
+// divFormeMsg2.style.backgroundColor = "#fffffff5";
+// divFormeMsg2.classList = "divFormeMsg fs-7 mb-3";
+// divFormeMsg2.style.alignContent = "center"
+// card2.appendChild(divFormeMsg2);
+
+// let pFormeMsg21 = document.createElement("p");
+// pFormeMsg21.classList = "fs-6";
+// pFormeMsg21.textContent = "WE LOVE";
+// pFormeMsg21.style.fontWeight = "bold";
+// divFormeMsg2.appendChild(pFormeMsg21);
+// let pFormeMsg22 = document.createElement("p");
+// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg2.appendChild(pFormeMsg22);
+
+// let divTestiImg2 = document.createElement('div');
+// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col42.appendChild(divTestiImg2);
+
+// let divTestiImgFlex2 = document.createElement('div');
+// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
+// col42.appendChild(divTestiImgFlex2);
+
+// // IN
+// let imgActiveItem2 = document.createElement('img');
+// imgActiveItem2.style.borderRadius = "50%";
+// imgActiveItem2.style.width = "20%";
+// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem2.classList = "d-block mx-2"
+// divTestiImgFlex2.appendChild(imgActiveItem2);
+
+// let TestiFlexText2 = document.createElement('div');
+// TestiFlexText2.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex2.appendChild(TestiFlexText2);
+
+// let h6TestiFlex2 = document.createElement('h6');
+// h6TestiFlex2.textContent = "Mattie Stepanek";
+// h6TestiFlex2.classList = "my-n1";
+// let pTestiFlex2 = document.createElement('p');
+// pTestiFlex2.textContent = "Manager";
+// pTestiFlex2.classList = "text-secondary my-1";
+// TestiFlexText2.appendChild(h6TestiFlex2);
+// TestiFlexText2.appendChild(pTestiFlex2);
+
+
+
+
+// // ACTIVE - COL 4 (3)
+// let col43 = document.createElement('div');
+// col43.classList = "col-4";
+// row.appendChild(col43);
+
+// let card3 = document.createElement('div');
+// card3.classList = "card p-3";
+// col43.appendChild(card3);
+
+// let divFormeMsg3 = document.createElement('div');
+// divFormeMsg3.style.backgroundColor = "#fffffff5";
+// divFormeMsg3.classList = "divFormeMsg fs-7 mb-3";
+// divFormeMsg3.style.alignContent = "center"
+// card3.appendChild(divFormeMsg3);
+
+// let pFormeMsg31 = document.createElement("p");
+// pFormeMsg31.classList = "fs-6";
+// pFormeMsg31.textContent = "WE LOVE";
+// pFormeMsg31.style.fontWeight = "bold";
+// divFormeMsg3.appendChild(pFormeMsg31);
+// let pFormeMsg32 = document.createElement("p");
+// pFormeMsg32.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg3.appendChild(pFormeMsg32);
+
+// let divTestiImg3 = document.createElement('div');
+// divTestiImg3.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col43.appendChild(divTestiImg3);
+
+// let divTestiImgFlex3 = document.createElement('div');
+// divTestiImgFlex3.classList = "d-flex flex-row justify-content-center align-items-center";
+// col43.appendChild(divTestiImgFlex3);
+
+// // IN
+// let imgActiveItem3 = document.createElement('img');
+// imgActiveItem3.style.borderRadius = "50%";
+// imgActiveItem3.style.width = "20%";
+// imgActiveItem3.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem3.classList = "d-block mx-2"
+// divTestiImgFlex3.appendChild(imgActiveItem3);
+
+// let TestiFlexText3 = document.createElement('div');
+// TestiFlexText3.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex3.appendChild(TestiFlexText3);
+
+// let h6TestiFLex3 = document.createElement('h6');
+// h6TestiFLex3.textContent = "Mattie Stepanek";
+// h6TestiFLex3.classList = "my-n1";
+// let pTestiFlex3 = document.createElement('p');
+// pTestiFlex3.textContent = "Manager";
+// pTestiFlex3.classList = "text-secondary my-1";
+// TestiFlexText2.appendChild(h6TestiFLex3);
+// TestiFlexText2.appendChild(pTestiFlex3);
+
+
+
+
+
+
+// // ACTIVE - COL 4 (2)
+// let col42 = document.createElement('div');
+// col42.classList = "col-4";
+// row.appendChild(col42);
+
+// let card2 = document.createElement('div');
+// card2.classList = "card p-3";
+// col42.appendChild(card2);
+
+// let divFormeMsg2 = document.createElement('div');
+// divFormeMsg2.style.backgroundColor = "#fffffff5";
+// divFormeMsg2.classList = "divFormeMsg fs-7 mb-3";
+// divFormeMsg2.style.alignContent = "center"
+// card2.appendChild(divFormeMsg2);
+
+// let pFormeMsg21 = document.createElement("p");
+// pFormeMsg21.classList = "fs-6";
+// pFormeMsg21.textContent = "WE LOVE";
+// pFormeMsg21.style.fontWeight = "bold";
+// divFormeMsg2.appendChild(pFormeMsg21);
+// let pFormeMsg22 = document.createElement("p");
+// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg2.appendChild(pFormeMsg22);
+
+// let divTestiImg2 = document.createElement('div');
+// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col42.appendChild(divTestiImg2);
+
+// let divTestiImgFlex2 = document.createElement('div');
+// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
+// col42.appendChild(divTestiImgFlex2);
+
+// // IN
+// let imgActiveItem2 = document.createElement('img');
+// imgActiveItem2.style.borderRadius = "50%";
+// imgActiveItem2.style.width = "20%";
+// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem2.classList = "d-block mx-2"
+// divTestiImgFlex2.appendChild(imgActiveItem2);
+
+// let TestiFlexText2 = document.createElement('div');
+// TestiFlexText2.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex2.appendChild(TestiFlexText2);
+
+// let h6TestiFlex2 = document.createElement('h6');
+// h6TestiFlex2.textContent = "Mattie Stepanek";
+// h6TestiFlex2.classList = "my-n1";
+// let pTestiFlex2 = document.createElement('p');
+// pTestiFlex2.textContent = "Manager";
+// pTestiFlex2.classList = "text-secondary my-1";
+// TestiFlexText2.appendChild(h6TestiFlex2);
+// TestiFlexText2.appendChild(pTestiFlex2);
+
+
+
+
+
+
+
+
+
+
+
+// let col42 = document.createElement('div');
+// col42.classList = "col-4";
+// row.appendChild(col42);
+
+// let card2 = document.createElement('div');
+// card2.classList = "card p-3";
+// col42.appendChild(card2);
+
+// let divFormeMsg2 = document.createElement('div');
+// divFormeMsg2.classList = "divFormeMsg2 p-3 fs-7 mb-3";
+// card2.appendChild(divFormeMsg2);
+
+// let pFormeMsg21 = document.createElement("p");
+// pFormeMsg21.classList = "fs-6";
+// pFormeMsg21.textContent = "WE LOVE";
+// pFormeMsg21.style.fontWeight = "bold";
+// divFormeMsg2.appendChild(pFormeMsg21);
+// let pFormeMsg22 = document.createElement("p");
+// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
+// divFormeMsg2.appendChild(pFormeMsg22);
+
+// let divTestiImg2 = document.createElement('div');
+// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// col41.appendChild(divTestiImg2);
+
+// let divTestiImgFlex2 = document.createElement('div');
+// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
+// col41.appendChild(divTestiImgFlex2);
+
+// // IN
+// let imgActiveItem2 = document.createElement('img');
+// imgActiveItem2.style.borderRadius = "50%";
+// imgActiveItem2.style.width = "20%";
+// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
+// imgActiveItem2.classList = "d-block mx-2"
+// divTestiImgFlex2.appendChild(imgActiveItem2);
+
+// let TestiFlexText2 = document.createElement('div');
+// TestiFlexText2.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex2.appendChild(TestiFlexText2);
+
+// let h6testiFlex2 = document.createElement('h6');
+// h6testiFlex2.classList = "my-n1";
+// let pTestiText2 = document.createElement('p');
+// pTestiText2.classList = "text-secondary my-1";
+// TestiFlexText2.appendChild(h6testiFlex2);
+// TestiFlexText2.appendChild(pTestiText2);
+
+// let divTestiImg2 = document.createElement('div');
+// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
+// divCarouselItemActive.appendChild(divTestiImg2);
+
+
+
+
+
+
+
+
+
+
+
+// // ITEM 2
+// let divCarouselItem2 = document.createElement('div');
+// divCarouselItem2.classList = "carousel-item";
+// divCarouselInner.appendChild(divCarouselItem2);
+// //
+
+
+
+
+
+
+// // ITEM 3
+// let divCarouselItemActive = document.createElement('div');
+// divCarouselItemActive.classList = "carousel-item";
+// divCarouselInner.appendChild(divCarouselItemActive);
+// //
+// let divFormeMsg = document.createElement('div');
+// divFormeMsg.classList = "divFormeMsg p-3 fs-7 mb-3";
+// divCarouselItemActive.appendChild(divFormeMsg);
+// // RAJOUTER TEXTE 
+
+// let divTestiImg = document.createElement('div');
+// divTestiImg.classList = "d-flex flex-column justify-content-center align-items-center";
+// divCarouselItemActive.appendChild(divTestiImg);
+
+// let divTestiImgFlex = document.createElement('div');
+// divTestiImgFlex.classList = "d-flex flex-row justify-content-center align-items-center";
+// divCarouselItemActive.appendChild(divTestiImgFlex);
+
+//     // IN
+// let imgActiveItem = document.createElement('img');
+// imgActiveItem.setAttribute('src','../../public/img/testimonials/image-1-1.png');
+// imgActiveItem.classList = "d-block mx-2"
+// divTestiImgFlex.appendChild(imgActiveItem);
+
+// let TestiFlexText = document.createElement('div');
+// TestiFlexText.classList = "d-flex flex-column mx-2";
+// divTestiImgFlex.appendChild(TestiFlexText);
+
+// let h6TestiText = document.createElement('h6');
+// h6TestiText.classList = "my-n1";
+// let pTestiText = document.createElement('p');
+// pTestiText.classList = "text-secondary my-1";
+// TestiFlexText.appendChild(h6TestiText);
+// TestiFlexText.appendChild(pTestiText);
