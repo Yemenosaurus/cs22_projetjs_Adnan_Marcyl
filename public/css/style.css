@@ -22668,11 +22668,11 @@ body {
 header {
   background-color: #f5ebdf;
 }
-header .maNavbar button {
+header .navtab button {
   border: none;
   background-color: transparent;
 }
-header .maNavbar button:hover {
+header .navtab button:hover {
   text-decoration: underline;
 }
 section:nth-of-type(1) {
@@ -22729,6 +22729,13 @@ section:nth-of-type(5) .carousel-inner .divFormeMsg {
   background-color: #fffffff5;
   align-content: center;
 }
+section:nth-of-type(5) .carousel-inner .divFormeMsg .formeMsg {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  transform: rotate(45deg);
+  left: 50px;
+}
 section:nth-of-type(6) button {
   background-color: #123;
   color: white;
@@ -22739,14 +22746,15 @@ section:nth-of-type(7) {
 }
 section:nth-of-type(7) .contactGauche {
   background-image: url("../../public/img/collect/one-page-img-04.jpg");
-  background-attachment: cover;
+  background-size: cover;
+  background-position: bottom;
 }
 section:nth-of-type(7) .contactLoc {
   background-color: #f5ebdf;
 }
 section:nth-of-type(7) .contactForum {
   background-image: url("../../public/img/fashion/fashion-brand-parallax-bg.jpg");
-  background-attachment: cover;
+  background-size: cover;
 }
 section:nth-of-type(7) .contactForum .form-group {
   border-bottom: 1px solid #a0a4a8a2;
@@ -22771,6 +22779,12 @@ footer input {
 footer .bgFoot {
   background-color: #1b1b1b;
   color: #959999;
+}
+
+@mediaqueries and (min-width: 320px) and (max-width: 767px) {
+  .navtab {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

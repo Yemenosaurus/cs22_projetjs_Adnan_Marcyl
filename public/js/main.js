@@ -47,13 +47,13 @@ img11.setAttribute('width', '100%')
 img12.src = '../../public/img/fashion/fashion-recent-products-02-1-1.jpg';
 img12.classList = "px-1";
 img12.setAttribute('width', '100%')
-img13.src = '../../public/img/fashion/fashion-recent-products-03-a-1-1.jpg';
+img13.src = '../../public/img/fashion/fashion-recent-products-01-b.jpg';
 img13.classList = "px-1";
 img13.setAttribute('width', '100%')
 img14.src = '../../public/img/fashion/fashion-recent-products-04.jpg';
 img14.classList = "px-1";
 img14.setAttribute('width', '100%')
-img15.src = '../../public/img/fashion/fashion-recent-products-01-1-1.jpg';
+img15.src = '../../public/img/fashion/fashion-recent-products-05-1.jpg';
 img15.classList = "px-1";
 img15.setAttribute('width', '100%')
 imgLigneUne1.appendChild(img11);
@@ -113,19 +113,19 @@ let img22 = document.createElement('img');
 let img23 = document.createElement('img');
 let img24 = document.createElement('img');
 let img25 = document.createElement('img');
-img21.src = '../../public/img/fashion/fashion-recent-products-01-1-1.jpg';
+img21.src = '../../public/img/fashion/fashion-recent-products-06-1.jpg';
 img21.classList = "px-1";
 img21.setAttribute('width', '100%')
-img22.src = '../../public/img/fashion/fashion-recent-products-02-1-1.jpg';
+img22.src = '../../public/img/fashion/fashion-recent-products-07-1.jpg';
 img22.classList = "px-1";
 img22.setAttribute('width', '100%')
-img23.src = '../../public/img/fashion/fashion-recent-products-03-a-1-1.jpg';
+img23.src = '../../public/img/fashion/fashion-recent-products-08-1.jpg';
 img23.classList = "px-1";
 img23.setAttribute('width', '100%')
-img24.src = '../../public/img/fashion/fashion-recent-products-04.jpg';
+img24.src = '../../public/img/fashion/fashion-recent-products-01-d.jpg';
 img24.classList = "px-1";
 img24.setAttribute('width', '100%')
-img25.src = '../../public/img/fashion/fashion-recent-products-01-1-1.jpg';
+img25.src = '../../public/img/fashion/fashion-recent-products-10-1.jpg';
 img25.classList = "px-1";
 img25.setAttribute('width', '100%')
 imgLigneDeux1.appendChild(img21);
