@@ -10,7 +10,7 @@ divFlex.classList = "d-flex flex-column justify-content-center align-items-cente
 divCont.appendChild(divFlex);
 
 let h4 = document.createElement('h4');
-h4.textContent = "h4";
+h4.textContent = "Recents Products";
 let p = document.createElement('p');
 p.textContent = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, minima iusto.";
 divFlex.appendChild(h4);
@@ -36,26 +36,86 @@ divLigneImg.appendChild(imgLigneUne3);
 divLigneImg.appendChild(imgLigneUne4);
 divLigneImg.appendChild(imgLigneUne5);
 
+// ## OBJETS IMAGES
+let images = [
+    // LIGNE 1
+    {
+        nom: "Textured Sweater",
+        prix: "$50.00",
+        source: '../../public/img/fashion/fashion-recent-products-01-1-1.jpg',
+        sourceHover : '../../public/img/fashion/fashion-recent-products-01-a-1-1.jpg'
+    },
+    {
+        nom: "Traveller Shirt",
+        prix: "$510.00",
+        source: '../../public/img/fashion/fashion-recent-products-02-1-1.jpg'
+    },
+    {
+        nom: "Crewneck Sweatshirt",
+        prix: "$20.00 - $50.00" ,
+        source: '../../public/img/fashion/fashion-recent-products-01-b.jpg'
+    },
+    {
+        nom: "Skinny Trousers",
+        prix: "$160.00",
+        source: '../../public/img/fashion/fashion-recent-products-04.jpg'
+    },
+    {
+        nom: "High Neck Sweater",
+        prix: "$35.00",
+        source: '../../public/img/fashion/fashion-recent-products-05-1.jpg'
+    },
+    // LIGNE 2
+    {
+        nom: "Sleeve Sweater",
+        prix: "$120.00",
+        source: '../../public/img/fashion/fashion-recent-products-06-1.jpg'
+    },
+    {
+        nom: "Pocket Sweatshirt",
+        prix: "$410.00",
+        source: '../../public/img/fashion/fashion-recent-products-07-1.jpg'
+    },
+    {
+        nom: "Top With Pleated",
+        prix: "$20.00 - $50.00",
+        source: '../../public/img/fashion/fashion-recent-products-08-1.jpg'
+    },
+    {
+        nom: "Cotton Sweater",
+        prix: "$155.00",
+        source: '../../public/img/fashion/fashion-recent-products-01-d.jpg'
+    },
+    {
+        nom: "Texture Plain Regular",
+        prix: "$70.00",
+        source: '../../public/img/fashion/fashion-recent-products-10-1.jpg'
+    },
+]
+
 let img11 = document.createElement('img');
 let img12 = document.createElement('img');
 let img13 = document.createElement('img');
 let img14 = document.createElement('img');
 let img15 = document.createElement('img');
-img11.src = '../../public/img/fashion/fashion-recent-products-01-1-1.jpg';
+
+
+img11.src = images[0].source;
 img11.classList = "px-1";
 img11.setAttribute('width', '100%')
-img12.src = '../../public/img/fashion/fashion-recent-products-02-1-1.jpg';
+img12.src = images[1].source
 img12.classList = "px-1";
 img12.setAttribute('width', '100%')
-img13.src = '../../public/img/fashion/fashion-recent-products-01-b.jpg';
+img13.src = images[2].source
 img13.classList = "px-1";
 img13.setAttribute('width', '100%')
-img14.src = '../../public/img/fashion/fashion-recent-products-04.jpg';
+img14.src = images[3].source
 img14.classList = "px-1";
 img14.setAttribute('width', '100%')
-img15.src = '../../public/img/fashion/fashion-recent-products-05-1.jpg';
+img15.src = images[4].source
 img15.classList = "px-1";
 img15.setAttribute('width', '100%')
+
 imgLigneUne1.appendChild(img11);
 imgLigneUne2.appendChild(img12);
 imgLigneUne3.appendChild(img13);
@@ -63,34 +123,44 @@ imgLigneUne4.appendChild(img14);
 imgLigneUne5.appendChild(img15);
 
 let h611 = document.createElement('h6');
-h611.textContent = "h6";
+h611.textContent = images[0].nom;
+h611.classList = "mt-4"
 imgLigneUne1.appendChild(h611);
 let p611 = document.createElement('p');
-p611.textContent = "p";
+p611.textContent = images[0].prix;
+p611.classList = "mt-n1"
 imgLigneUne1.appendChild(p611);
 let h612 = document.createElement('h6');
-h612.textContent = "h6";
+h612.textContent = images[1].nom;
+h612.classList = "mt-4"
 imgLigneUne2.appendChild(h612);
 let p612 = document.createElement('p');
-p612.textContent = "p";
+p612.textContent = images[1].prix;
+p612.classList = "mt-n1"
 imgLigneUne2.appendChild(p612);
 let h613 = document.createElement('h6');
-h613.textContent = "h6";
+h613.textContent = images[2].nom;
+h613.classList = "mt-4"
 imgLigneUne3.appendChild(h613);
 let p613 = document.createElement('p');
-p613.textContent = "p";
+p613.textContent = images[2].prix;
+p613.classList = "mt-n1"
 imgLigneUne3.appendChild(p613);
 let h614 = document.createElement('h6');
-h614.textContent = "h6";
+h614.textContent = images[3].nom;
+h614.classList = "mt-4"
 imgLigneUne4.appendChild(h614);
 let p614 = document.createElement('p');
-p614.textContent = "p";
+p614.textContent = images[3].prix;
+p614.classList = "mt-n1"
 imgLigneUne4.appendChild(p614);
 let h615 = document.createElement('h6');
-h615.textContent = "h6";
+h615.textContent = images[4].nom;
+h615.classList = "mt-4"
 imgLigneUne5.appendChild(h615);
 let p615 = document.createElement('p');
-p615.textContent = "p";
+p615.textContent = images[4].prix;
+p615.classList = "mt-n1"
 imgLigneUne5.appendChild(p615);
 
 let divLigneImg2 = document.createElement('div');
@@ -113,19 +183,19 @@ let img22 = document.createElement('img');
 let img23 = document.createElement('img');
 let img24 = document.createElement('img');
 let img25 = document.createElement('img');
-img21.src = '../../public/img/fashion/fashion-recent-products-06-1.jpg';
+img21.src = images[5].source
 img21.classList = "px-1";
 img21.setAttribute('width', '100%')
-img22.src = '../../public/img/fashion/fashion-recent-products-07-1.jpg';
+img22.src = images[6].source
 img22.classList = "px-1";
 img22.setAttribute('width', '100%')
-img23.src = '../../public/img/fashion/fashion-recent-products-08-1.jpg';
+img23.src = images[7].source
 img23.classList = "px-1";
 img23.setAttribute('width', '100%')
-img24.src = '../../public/img/fashion/fashion-recent-products-01-d.jpg';
+img24.src = images[8].source
 img24.classList = "px-1";
 img24.setAttribute('width', '100%')
-img25.src = '../../public/img/fashion/fashion-recent-products-10-1.jpg';
+img25.src = images[9].source
 img25.classList = "px-1";
 img25.setAttribute('width', '100%')
 imgLigneDeux1.appendChild(img21);
@@ -135,42 +205,102 @@ imgLigneDeux4.appendChild(img24);
 imgLigneDeux5.appendChild(img25);
 
 let h621 = document.createElement('h6');
-h621.textContent = "h6";
+h621.textContent = images[5].nom;
+h621.classList = "mt-4"
 imgLigneDeux1.appendChild(h621);
 let p621 = document.createElement('p');
-p621.textContent = "p";
+p621.textContent = images[5].prix;
+p621.classList = "mt-n1"
 imgLigneDeux1.appendChild(p621);
 let h622 = document.createElement('h6');
-h622.textContent = "h6";
+h622.textContent = images[6].nom;
+h622.classList = "mt-4"
 imgLigneDeux2.appendChild(h622);
 let p622 = document.createElement('p');
-p622.textContent = "p";
+p622.textContent = images[6].prix;
+p622.classList = "mt-n1"
 imgLigneDeux2.appendChild(p622);
 let h623 = document.createElement('h6');
-h623.textContent = "h6";
+h623.textContent = images[7].nom;
+h623.classList = "mt-4"
 imgLigneDeux3.appendChild(h623);
 let p623 = document.createElement('p');
-p623.textContent = "p";
+p623.textContent = images[7].prix;
+p623.classList = "mt-n1"
 imgLigneDeux3.appendChild(p623);
 let h624 = document.createElement('h6');
-h624.textContent = "h6";
+h624.textContent = images[8].nom;
+h624.classList = "mt-4"
 imgLigneDeux4.appendChild(h624);
 let p624 = document.createElement('p');
-p624.textContent = "p";
+p624.textContent = images[8].prix;
+p624.classList = "mt-n1"
 imgLigneDeux4.appendChild(p624);
 let h625 = document.createElement('h6');
-h625.textContent = "h6";
+h625.textContent = images[9].nom;
+h625.classList = "mt-4"
 imgLigneDeux5.appendChild(h625);
 let p625 = document.createElement('p');
-p625.textContent = "p";
+p625.textContent = images[9].prix;
+p625.classList = "mt-n1"
 imgLigneDeux5.appendChild(p625);
 
 
+// ## SOLDES
+let carreVert1 = document.createElement('div');
+carreVert1.textContent = "-12%";
+carreVert1.style.position = "absolute";
+carreVert1.style.marginLeft = "15px";
+carreVert1.style.marginTop = "15px";
+carreVert1.style.color = "white";
+carreVert1.style.zIndex = "2";
+carreVert1.style.width = "40px";
+carreVert1.style.backgroundColor = "green";
+carreVert1.style.border = "1px solid white";
+imgLigneUne5.appendChild(carreVert1);
+
+let carreVert2 = document.createElement('div');
+carreVert2.textContent = "-14%";
+carreVert2.style.color = "white";
+carreVert2.style.zIndex = "2";
+carreVert2.style.width = "40px";
+carreVert2.style.backgroundColor = "green";
+carreVert2.style.position = "absolute";
+carreVert2.style.marginLeft = "15px";
+carreVert2.style.marginTop = "15px";
+carreVert2.style.border = "1px solid white";
+imgLigneDeux1.insertBefore(carreVert2, img21);
+
+let carreVert3 = document.createElement('div');
+carreVert3.textContent = "-14%";
+carreVert3.style.color = "white";
+carreVert3.style.zIndex = "2";
+carreVert3.style.width = "40px";
+carreVert3.style.backgroundColor = "green";
+carreVert3.style.position = "absolute";
+carreVert3.style.marginLeft = "15px";
+carreVert3.style.marginTop = "15px";
+carreVert3.style.border = "1px solid white";
+imgLigneDeux4.insertBefore(carreVert3, img24);
+
+let carreVert4 = document.createElement('div');
+carreVert4.textContent = "-14%";
+carreVert4.style.color = "white";
+carreVert4.style.zIndex = "2";
+carreVert4.style.width = "40px";
+carreVert4.style.backgroundColor = "green";
+carreVert4.style.position = "absolute";
+carreVert4.style.marginLeft = "15px";
+carreVert4.style.marginTop = "15px";
+carreVert4.style.border = "1px solid white";
+imgLigneDeux5.insertBefore(carreVert4, img25);
 
 
 
-
-
+// ## EVENT
+imgLigneUne1.addEventListener('mouseup', (event) => {
+    img11.src = images[0].sourceHover;
+})
 
 
 
