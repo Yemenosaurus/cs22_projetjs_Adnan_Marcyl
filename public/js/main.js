@@ -178,6 +178,64 @@ imgLigneDeux5.appendChild(p625);
 
 
 // // ## SECTION TESTIMONIALS
+let carouselInner = document.getElementsByClassName('carousel-inner')[0];
+// ## CREATION BOUTONS
+let btnPrev = document.createElement('button');
+btnPrev.classList = "carousel-control-prev";
+btnPrev.setAttribute('data-bs-target', '#carouselExampleControls');
+btnPrev.setAttribute('data-bs-slide', 'prev');
+
+let btnPrevSpan1 = document.createElement('span');
+btnPrevSpan1.classList = "carousel-control-prev-icon";
+btnPrevSpan1.setAttribute('aria-hidden', 'true');
+let btnPrevSpan2 = document.createElement('span');
+btnPrevSpan2.classList = "visually-hidden";
+btnPrevSpan2.textContent = "Previous";
+
+carouselInner.appendChild(btnPrev);
+btnPrev.appendChild(btnPrevSpan1);
+btnPrev.appendChild(btnPrevSpan2);
+
+
+let btnNext = document.createElement('button');
+btnNext.classList = "carousel-control-next";
+btnNext.setAttribute('data-bs-target', '#carouselExampleControls');
+btnNext.setAttribute('data-bs-slide', 'next');
+
+let btnNextSpan1 = document.createElement('span');
+btnNextSpan1.classList = "carousel-control-next-icon";
+btnNextSpan1.setAttribute('aria-hidden', 'true');
+let btnNextSpan2 = document.createElement('span');
+btnNextSpan2.classList = "visually-hidden";
+btnNextSpan2.textContent = "Next";
+
+carouselInner.appendChild(btnNext);
+btnNext.appendChild(btnNextSpan1);
+btnNext.appendChild(btnNextSpan2);
+
+// ## EVENTS
+// VOIR FEUILLE CAHIER
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let sectionTesti = document.getElementsByClassName('sectionTestimonials')[0];
 // sectionTesti.style.backgroundColor = "rgb(245,235,223)"
 
@@ -403,289 +461,3 @@ imgLigneDeux5.appendChild(p625);
 
 
 
-
-
-// // ACTIVE - COL 4 (2)
-// let col42 = document.createElement('div');
-// col42.classList = "col-4";
-// row.appendChild(col42);
-
-// let card2 = document.createElement('div');
-// card2.classList = "card p-3";
-// col42.appendChild(card2);
-
-// let divFormeMsg2 = document.createElement('div');
-// divFormeMsg2.style.backgroundColor = "#fffffff5";
-// divFormeMsg2.classList = "divFormeMsg fs-7 mb-3";
-// divFormeMsg2.style.alignContent = "center"
-// card2.appendChild(divFormeMsg2);
-
-// let pFormeMsg21 = document.createElement("p");
-// pFormeMsg21.classList = "fs-6";
-// pFormeMsg21.textContent = "WE LOVE";
-// pFormeMsg21.style.fontWeight = "bold";
-// divFormeMsg2.appendChild(pFormeMsg21);
-// let pFormeMsg22 = document.createElement("p");
-// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg2.appendChild(pFormeMsg22);
-
-// let divTestiImg2 = document.createElement('div');
-// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col42.appendChild(divTestiImg2);
-
-// let divTestiImgFlex2 = document.createElement('div');
-// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
-// col42.appendChild(divTestiImgFlex2);
-
-// // IN
-// let imgActiveItem2 = document.createElement('img');
-// imgActiveItem2.style.borderRadius = "50%";
-// imgActiveItem2.style.width = "20%";
-// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem2.classList = "d-block mx-2"
-// divTestiImgFlex2.appendChild(imgActiveItem2);
-
-// let TestiFlexText2 = document.createElement('div');
-// TestiFlexText2.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex2.appendChild(TestiFlexText2);
-
-// let h6TestiFlex2 = document.createElement('h6');
-// h6TestiFlex2.textContent = "Mattie Stepanek";
-// h6TestiFlex2.classList = "my-n1";
-// let pTestiFlex2 = document.createElement('p');
-// pTestiFlex2.textContent = "Manager";
-// pTestiFlex2.classList = "text-secondary my-1";
-// TestiFlexText2.appendChild(h6TestiFlex2);
-// TestiFlexText2.appendChild(pTestiFlex2);
-
-
-
-
-// // ACTIVE - COL 4 (3)
-// let col43 = document.createElement('div');
-// col43.classList = "col-4";
-// row.appendChild(col43);
-
-// let card3 = document.createElement('div');
-// card3.classList = "card p-3";
-// col43.appendChild(card3);
-
-// let divFormeMsg3 = document.createElement('div');
-// divFormeMsg3.style.backgroundColor = "#fffffff5";
-// divFormeMsg3.classList = "divFormeMsg fs-7 mb-3";
-// divFormeMsg3.style.alignContent = "center"
-// card3.appendChild(divFormeMsg3);
-
-// let pFormeMsg31 = document.createElement("p");
-// pFormeMsg31.classList = "fs-6";
-// pFormeMsg31.textContent = "WE LOVE";
-// pFormeMsg31.style.fontWeight = "bold";
-// divFormeMsg3.appendChild(pFormeMsg31);
-// let pFormeMsg32 = document.createElement("p");
-// pFormeMsg32.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg3.appendChild(pFormeMsg32);
-
-// let divTestiImg3 = document.createElement('div');
-// divTestiImg3.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col43.appendChild(divTestiImg3);
-
-// let divTestiImgFlex3 = document.createElement('div');
-// divTestiImgFlex3.classList = "d-flex flex-row justify-content-center align-items-center";
-// col43.appendChild(divTestiImgFlex3);
-
-// // IN
-// let imgActiveItem3 = document.createElement('img');
-// imgActiveItem3.style.borderRadius = "50%";
-// imgActiveItem3.style.width = "20%";
-// imgActiveItem3.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem3.classList = "d-block mx-2"
-// divTestiImgFlex3.appendChild(imgActiveItem3);
-
-// let TestiFlexText3 = document.createElement('div');
-// TestiFlexText3.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex3.appendChild(TestiFlexText3);
-
-// let h6TestiFLex3 = document.createElement('h6');
-// h6TestiFLex3.textContent = "Mattie Stepanek";
-// h6TestiFLex3.classList = "my-n1";
-// let pTestiFlex3 = document.createElement('p');
-// pTestiFlex3.textContent = "Manager";
-// pTestiFlex3.classList = "text-secondary my-1";
-// TestiFlexText2.appendChild(h6TestiFLex3);
-// TestiFlexText2.appendChild(pTestiFlex3);
-
-
-
-
-
-
-// // ACTIVE - COL 4 (2)
-// let col42 = document.createElement('div');
-// col42.classList = "col-4";
-// row.appendChild(col42);
-
-// let card2 = document.createElement('div');
-// card2.classList = "card p-3";
-// col42.appendChild(card2);
-
-// let divFormeMsg2 = document.createElement('div');
-// divFormeMsg2.style.backgroundColor = "#fffffff5";
-// divFormeMsg2.classList = "divFormeMsg fs-7 mb-3";
-// divFormeMsg2.style.alignContent = "center"
-// card2.appendChild(divFormeMsg2);
-
-// let pFormeMsg21 = document.createElement("p");
-// pFormeMsg21.classList = "fs-6";
-// pFormeMsg21.textContent = "WE LOVE";
-// pFormeMsg21.style.fontWeight = "bold";
-// divFormeMsg2.appendChild(pFormeMsg21);
-// let pFormeMsg22 = document.createElement("p");
-// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg2.appendChild(pFormeMsg22);
-
-// let divTestiImg2 = document.createElement('div');
-// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col42.appendChild(divTestiImg2);
-
-// let divTestiImgFlex2 = document.createElement('div');
-// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
-// col42.appendChild(divTestiImgFlex2);
-
-// // IN
-// let imgActiveItem2 = document.createElement('img');
-// imgActiveItem2.style.borderRadius = "50%";
-// imgActiveItem2.style.width = "20%";
-// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem2.classList = "d-block mx-2"
-// divTestiImgFlex2.appendChild(imgActiveItem2);
-
-// let TestiFlexText2 = document.createElement('div');
-// TestiFlexText2.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex2.appendChild(TestiFlexText2);
-
-// let h6TestiFlex2 = document.createElement('h6');
-// h6TestiFlex2.textContent = "Mattie Stepanek";
-// h6TestiFlex2.classList = "my-n1";
-// let pTestiFlex2 = document.createElement('p');
-// pTestiFlex2.textContent = "Manager";
-// pTestiFlex2.classList = "text-secondary my-1";
-// TestiFlexText2.appendChild(h6TestiFlex2);
-// TestiFlexText2.appendChild(pTestiFlex2);
-
-
-
-
-
-
-
-
-
-
-
-// let col42 = document.createElement('div');
-// col42.classList = "col-4";
-// row.appendChild(col42);
-
-// let card2 = document.createElement('div');
-// card2.classList = "card p-3";
-// col42.appendChild(card2);
-
-// let divFormeMsg2 = document.createElement('div');
-// divFormeMsg2.classList = "divFormeMsg2 p-3 fs-7 mb-3";
-// card2.appendChild(divFormeMsg2);
-
-// let pFormeMsg21 = document.createElement("p");
-// pFormeMsg21.classList = "fs-6";
-// pFormeMsg21.textContent = "WE LOVE";
-// pFormeMsg21.style.fontWeight = "bold";
-// divFormeMsg2.appendChild(pFormeMsg21);
-// let pFormeMsg22 = document.createElement("p");
-// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg2.appendChild(pFormeMsg22);
-
-// let divTestiImg2 = document.createElement('div');
-// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col41.appendChild(divTestiImg2);
-
-// let divTestiImgFlex2 = document.createElement('div');
-// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
-// col41.appendChild(divTestiImgFlex2);
-
-// // IN
-// let imgActiveItem2 = document.createElement('img');
-// imgActiveItem2.style.borderRadius = "50%";
-// imgActiveItem2.style.width = "20%";
-// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem2.classList = "d-block mx-2"
-// divTestiImgFlex2.appendChild(imgActiveItem2);
-
-// let TestiFlexText2 = document.createElement('div');
-// TestiFlexText2.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex2.appendChild(TestiFlexText2);
-
-// let h6testiFlex2 = document.createElement('h6');
-// h6testiFlex2.classList = "my-n1";
-// let pTestiText2 = document.createElement('p');
-// pTestiText2.classList = "text-secondary my-1";
-// TestiFlexText2.appendChild(h6testiFlex2);
-// TestiFlexText2.appendChild(pTestiText2);
-
-// let divTestiImg2 = document.createElement('div');
-// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// divCarouselItemActive.appendChild(divTestiImg2);
-
-
-
-
-
-
-
-
-
-
-
-// // ITEM 2
-// let divCarouselItem2 = document.createElement('div');
-// divCarouselItem2.classList = "carousel-item";
-// divCarouselInner.appendChild(divCarouselItem2);
-// //
-
-
-
-
-
-
-// // ITEM 3
-// let divCarouselItemActive = document.createElement('div');
-// divCarouselItemActive.classList = "carousel-item";
-// divCarouselInner.appendChild(divCarouselItemActive);
-// //
-// let divFormeMsg = document.createElement('div');
-// divFormeMsg.classList = "divFormeMsg p-3 fs-7 mb-3";
-// divCarouselItemActive.appendChild(divFormeMsg);
-// // RAJOUTER TEXTE 
-
-// let divTestiImg = document.createElement('div');
-// divTestiImg.classList = "d-flex flex-column justify-content-center align-items-center";
-// divCarouselItemActive.appendChild(divTestiImg);
-
-// let divTestiImgFlex = document.createElement('div');
-// divTestiImgFlex.classList = "d-flex flex-row justify-content-center align-items-center";
-// divCarouselItemActive.appendChild(divTestiImgFlex);
-
-//     // IN
-// let imgActiveItem = document.createElement('img');
-// imgActiveItem.setAttribute('src','../../public/img/testimonials/image-1-1.png');
-// imgActiveItem.classList = "d-block mx-2"
-// divTestiImgFlex.appendChild(imgActiveItem);
-
-// let TestiFlexText = document.createElement('div');
-// TestiFlexText.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex.appendChild(TestiFlexText);
-
-// let h6TestiText = document.createElement('h6');
-// h6TestiText.classList = "my-n1";
-// let pTestiText = document.createElement('p');
-// pTestiText.classList = "text-secondary my-1";
-// TestiFlexText.appendChild(h6TestiText);
-// TestiFlexText.appendChild(pTestiText);
