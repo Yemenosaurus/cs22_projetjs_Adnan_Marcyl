@@ -22672,11 +22672,13 @@ header .navbar {
   z-index: 20;
   width: 100%;
 }
-header .navbar .navtab button {
+header .navbar .navtab a {
   border: none;
+  color: black;
+  text-decoration: none;
   background-color: transparent;
 }
-header .navbar .navtab button:hover {
+header .navbar .navtab a:hover {
   border-bottom: 1px solid black;
 }
 header .maNavProfil button {
@@ -22832,6 +22834,11 @@ footer .bgFoot {
   }
   section:nth-of-type(3) .FashionBrandText {
     margin-top: 40px;
+  }
+
+  footer .divMedia {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

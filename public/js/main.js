@@ -5,7 +5,8 @@ let navI2 = document.getElementsByTagName('i')[1];
 let navI3 = document.getElementsByTagName('i')[2];
 let navI4 = document.getElementsByTagName('i')[3];
 let btnNav = navbar.querySelectorAll('button');
-let imgNav = navbar.getElementsByTagName('img')[0];           
+let aNav = navbar.querySelectorAll('a');
+let imgNav = navbar.getElementsByTagName('img')[0];          
 
 // ## SCROLL
 window.addEventListener('scroll',()=>{      
@@ -16,12 +17,28 @@ window.addEventListener('scroll',()=>{
         btnNav.forEach(element => {             
             element.style.color = 'white';             
             element.classList.remove('text-black')
-        }
-    )} else if (window.scrollY <= 704){
+        })
+        aNav.forEach(element => {             
+            element.style.color = 'white';             
+            element.classList.remove('text-black')
+        })
+    } else if (window.scrollY <= 704){
         navbar.style.backgroundColor = "rgb(245,235,223)";
         navbar.style.color = 'black';
         imgNav.setAttribute('src', '../../public/img/logo.png');
         btnNav.forEach(element => {             
+            element.style.backgroundColor = 'transparent';             
+            element.classList.add('text-black')
+            element.addEventListener('mouseenter', (e) => {
+                element.style.color = "grey";
+                element.style.borderBottom = "1px solid grey"
+            })
+            element.addEventListener('mouseout', (e) => {
+                element.style.color = "white";
+                element.style.borderBottom = "none";
+            })
+        })
+        aNav.forEach(element => {             
             element.style.backgroundColor = 'transparent';             
             element.classList.add('text-black')
             element.addEventListener('mouseenter', (e) => {
