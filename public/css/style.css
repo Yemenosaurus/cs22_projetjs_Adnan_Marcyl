@@ -22735,6 +22735,7 @@ section:nth-of-type(3) button {
   background-color: black;
   color: white;
   border: none;
+  width: 50%;
 }
 section:nth-of-type(5) {
   background-color: #f5ebdf;
