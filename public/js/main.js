@@ -1,3 +1,70 @@
+// ## NAV BAR
+let navbar = document.getElementsByClassName('navbar')[0];
+let navI1 = document.getElementsByTagName('i')[0];
+let navI2 = document.getElementsByTagName('i')[1];
+let navI3 = document.getElementsByTagName('i')[2];
+let navI4 = document.getElementsByTagName('i')[3];
+let btnNav = navbar.querySelectorAll('button');
+let imgNav = navbar.getElementsByTagName('img')[0];           
+
+// ## SCROLL
+window.addEventListener('scroll',()=>{      
+    if (window.scrollY  >= 705 ) {         
+        navbar.style.backgroundColor = 'black';         
+        navbar.style.color = 'white';
+        imgNav.setAttribute('src', '../../public/img/white-logo.png');
+        btnNav.forEach(element => {             
+            element.style.color = 'white';             
+            element.classList.remove('text-black')
+        }
+    )} else if (window.scrollY <= 704){
+        navbar.style.backgroundColor = "rgb(245,235,223)";
+        navbar.style.color = 'black';
+        imgNav.setAttribute('src', '../../public/img/logo.png');
+        btnNav.forEach(element => {             
+            element.style.backgroundColor = 'transparent';             
+            element.classList.add('text-black')
+            element.addEventListener('mouseenter', (e) => {
+                element.style.color = "grey";
+                element.style.borderBottom = "1px solid grey"
+            })
+            element.addEventListener('mouseout', (e) => {
+                element.style.color = "white";
+                element.style.borderBottom = "none";
+            })
+        })
+    }        
+});
+
+
+// <!-- Button trigger modal -->
+// <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+//   Launch static backdrop modal
+// </button>
+
+// <!-- Modal -->
+// <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+//   <div class="modal-dialog">
+//     <div class="modal-content">
+//       <div class="modal-header">
+//         <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+//         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+//       </div>
+//       <div class="modal-body">
+//         ...
+//       </div>
+//       <div class="modal-footer">
+//         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+//         <button type="button" class="btn btn-primary">Understood</button>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
+// ## MODAL
+
+
+
 // ## SECTION PRODUCTS
 let sectionProducts = document.getElementById('sectionProducts');
 
@@ -43,27 +110,31 @@ let images = [
         nom: "Textured Sweater",
         prix: "$50.00",
         source: '../../public/img/fashion/fashion-recent-products-01-1-1.jpg',
-        sourceHover : '../../public/img/fashion/fashion-recent-products-01-a-1-1.jpg'
+        sourceHover: '../../public/img/fashion/fashion-recent-products-01-a-1-1.jpg'
     },
     {
         nom: "Traveller Shirt",
         prix: "$510.00",
-        source: '../../public/img/fashion/fashion-recent-products-02-1-1.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-02-1-1.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-02-a-1-1-1.jpg'
     },
     {
         nom: "Crewneck Sweatshirt",
         prix: "$20.00 - $50.00" ,
-        source: '../../public/img/fashion/fashion-recent-products-01-b.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-01-b.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-03-a-1-1.jpg'
     },
     {
         nom: "Skinny Trousers",
         prix: "$160.00",
-        source: '../../public/img/fashion/fashion-recent-products-04.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-04.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-04-a-1.jpg',
     },
     {
         nom: "High Neck Sweater",
         prix: "$35.00",
-        source: '../../public/img/fashion/fashion-recent-products-05-1.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-05-1.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-05-a-1.jpg',
     },
     // LIGNE 2
     {
@@ -298,8 +369,86 @@ imgLigneDeux5.insertBefore(carreVert4, img25);
 
 
 // ## EVENT
-imgLigneUne1.addEventListener('mouseup', (event) => {
+// # LIGNE 1
+// PETITs COEURs
+// let petitscoeurs = [
+//     {
+//         iBalise: "far fa-heart",
+//     }
+// ];
+
+imgLigneUne1.addEventListener('pointerenter', (event) => {
+    // CHANGE IMG
     img11.src = images[0].sourceHover;
+    img11.classList = "px-1";
+    // COEUR
+    let petitcoeur1 = document.createElement('div');
+    imgLigneUne1.insertBefore(petitcoeur1, img11);
+    let i = document.createElement('i');
+    i.classList = "far fa-heart";
+    i.style.border = "0";
+    i.style.borderRadius = "50%";
+    i.style.color = "black";
+    i.style.backgroundColor = "white"
+    i.style.zIndex = "2";
+    i.style.width = "40px";
+    petitcoeur1.appendChild("i");
+    // BOUTTONS
+    let btnShopUn = document.createElement('button');
+    btnShopUn.classList = "py-1 px-3"
+    btnShopUn.textContent = "TEST";
+    btnShopUn.style.zIndex = "3";
+    imgLigneUne1.insertBefore(btnShopUn, img11);
+    let btnShopDeux = document.createElement('button');
+})
+imgLigneUne1.addEventListener('pointerout', (event) => {
+    img11.src = images[0].source;
+    img11.classList = "px-1";
+})
+
+
+
+imgLigneUne2.addEventListener('pointerenter', (event) => {
+    img12.src = images[1].sourceHover;
+    img12.classList = "px-1";
+})
+imgLigneUne2.addEventListener('pointerout', (event) => {
+    img12.src = images[1].source;
+    img12.classList = "px-1";
+})
+
+
+
+imgLigneUne3.addEventListener('pointerenter', (event) => {
+    img13.src = images[2].sourceHover;
+    img13.classList = "px-1";
+})
+imgLigneUne3.addEventListener('pointerout', (event) => {
+    img13.src = images[2].source;
+    img13.classList = "px-1";
+})
+
+
+
+imgLigneUne4.addEventListener('pointerenter', (event) => {
+    img14.src = images[3].sourceHover;
+    img14.classList = "px-1";
+})
+imgLigneUne4.addEventListener('pointerout', (event) => {
+    img14.src = images[3].source;
+    img14.classList = "px-1";
+})
+
+
+
+imgLigneUne5.addEventListener('pointerenter', (event) => {
+    img15.src = images[4].sourceHover;
+    img15.classList = "px-1";
+
+})
+imgLigneUne5.addEventListener('pointerout', (event) => {
+    img15.src = images[4].source;
+    img15.classList = "px-1";
 })
 
 
@@ -580,14 +729,3 @@ btnNext.appendChild(btnNextSpan2);
 // pTestiText3.classList = "text-secondary my-1";
 // TestiFlex3.appendChild(h6TestiText3);
 // TestiFlex3.appendChild(pTestiText3);
-
-
-
-
-
-
-
-
-
-
-
