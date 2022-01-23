@@ -22725,6 +22725,9 @@ section:nth-of-type(2) .maCollection {
   margin: 0;
   width: 100%;
 }
+section:nth-of-type(2) #AboutCompanyH4 {
+  text-align: mixed;
+}
 section:nth-of-type(3) {
   background-color: #f5ebdf;
 }
