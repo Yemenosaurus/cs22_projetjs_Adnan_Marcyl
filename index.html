@@ -28,9 +28,34 @@
                 </div>
                 <div class="maNavProfil">
                     <button><i class="fas fa-search mx-1"></i></button>
-                    <button><i class="fas fa-user mx-1"></i></button>
+                    <button><i class="fas fa-user mx-1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"></i></button>
                     <button><i class="far fa-heart mx-1"></i></button>
                     <button><i class="fas fa-shopping-cart mx-1"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="staticBackdropLabel"><strong>Bienvenue sur Hongo !</strong></h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Cher utilisateur, souhaitez-vous vous créer un compte ? <br> Si oui, appuyez sur le bouton <strong>"S'inscrire"</strong>. <br> Si vous en possédez déjà un, vous pouvez vous connecter en appuyant sur le bouton <strong>"Se connecter"</strong>.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Se Connecter</button>
+                        <button type="button" class="btn btn-primary">S'inscrire</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +75,7 @@
                     </div>
                     <div
                         class="s1ContenuSac col-3 d-flex flex-column justify-content-between align-items-left align-content-center mx-3 ms-7">
-                        <p class="">--- NEW COLLECTION 2019</p>
+                        <p class=""> — NEW COLLECTION 2019</p>
                         <h1>Brown leather women's bag</h1>
                         <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla, repellat.</p>
                         <div class="doublePrice d-flex flex-row">
@@ -75,8 +100,8 @@
 
     <section class="sectiondeux">
         <div class="container-fluid">
-            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
-                <div class="d-flex flex-row my-5">
+            <div class="col-lg-12 col-md-10 col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-row flex-wrap my-5">
                     <button class="mx-7"><i class="fas fa-globe"></i> FREE STANDART SHIPPING</button>
                     <div class="monTrait"></div>
                     <button class="mx-7"><i class="fas fa-wallet"></i> 100% MONEY BACK</button>
@@ -84,16 +109,16 @@
                     <button class="mx-7"><i class="fas fa-gift"></i> GIFTS FOR MEMBERS</button>
                 </div>
                 <div class="maCollection row p-5">
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-10 col-sm-12">
                         <img src="./public/img/collect/one-page-collection-06.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-10 col-sm-12">
                         <img src="./public/img/collect/one-page-collection-05.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-10 col-sm-12">
                         <img src="./public/img/collect/one-page-collection-01.jpg" alt="" class="img-fluid">
                     </div>
-                    <div class="col-3">
+                    <div class="col-lg-3 col-md-10 col-sm-12">
                         <img src="./public/img/collect/one-page-collection-03.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -102,8 +127,9 @@
                         <div class="col-1"></div>
                         <div class="col-5 d-flex flex-column px-4">
                             <p><strong> — ABOUT COMPANY</strong></p>
-                            <h4 id="AboutCompanyH4"><strong> The principle of the design - the harmony, <br> rhythm and balance are all the same with
-                                <br> interior and fashion design.</strong>
+                            <h4 id="AboutCompanyH4"><strong> The principle of the design - the harmony, <br> rhythm and
+                                    balance are all the same with
+                                    <br> interior and fashion design.</strong>
                             </h4>
                         </div>
                         <div class="col-5 mx-4">
@@ -316,7 +342,7 @@
                             <img src="./public/img/blog/blog-listing-img63-578x771.jpg" class="w-100" alt="">
                             <button class="mt-5 mb-4">PHOTOGRAPHY</button>
                             <h5>Fashion is part of culture and it's about more than just dress</h5>
-                            <p class="text-secondary"><span class="text-dark mx-2">--</span>By Alexis Richards</p>
+                            <p class="text-secondary"><span class="text-dark mx-2"> —</span>By Alexis Richards</p>
                         </div>
                     </div>
                     <div class="col-3 p-1">
@@ -324,7 +350,7 @@
                             <img src="./public/img/blog/blog-listing-img58-578x771.jpg" class="w-100" alt="">
                             <button class="mt-5 mb-4">PHOTOGRAPHY</button>
                             <h5>I design to make women feel confident and beautiful fashion</h5>
-                            <p class="text-secondary"><span class="text-dark mx-2">--</span>By Alexis Richards</p>
+                            <p class="text-secondary"><span class="text-dark mx-2"> —</span>By Alexis Richards</p>
                         </div>
                     </div>
                     <div class="col-3 p-1">
@@ -332,7 +358,7 @@
                             <img src="./public/img/blog/blog-listing-img59-578x771.jpg" class="w-100" alt="">
                             <button class="mt-5 mb-4">PHOTOGRAPHY</button>
                             <h5>A designer is only as good as the star who wears her clothes</h5>
-                            <p class="text-secondary"><span class="text-dark mx-2">--</span>By Alexis Richards</p>
+                            <p class="text-secondary"><span class="text-dark mx-2"> —</span>By Alexis Richards</p>
                         </div>
                     </div>
                     <div class="col-3 p-1">
@@ -340,7 +366,7 @@
                             <img src="./public/img/blog/blog-listing-img60-578x771.jpg" class="w-100" alt="">
                             <button class="mt-5 mb-4">PHOTOGRAPHY</button>
                             <h5>Chandeliers are marvels of drop dead showiness the jewellery</h5>
-                            <p class="text-secondary"><span class="text-dark mx-2">--</span>By Alexis Richards</p>
+                            <p class="text-secondary"><span class="text-dark mx-2"> —</span>By Alexis Richards</p>
                         </div>
                     </div>
                 </div>
@@ -403,7 +429,7 @@
     <section class="Insta">
         <div class="container-fluid">
             <div class="d-flex flex-column justify-content-center align-items-center p-9">
-                <p><strong>-- INSTAGRAM @HONGO FASHION</strong></p>
+                <p><strong> — INSTAGRAM @HONGO FASHION</strong></p>
             </div>
         </div>
     </section>

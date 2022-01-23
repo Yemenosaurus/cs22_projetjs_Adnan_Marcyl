@@ -37,6 +37,7 @@ window.addEventListener('scroll',()=>{
 });
 
 
+
 // <!-- Button trigger modal -->
 // <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 //   Launch static backdrop modal
@@ -62,7 +63,55 @@ window.addEventListener('scroll',()=>{
 // </div>
 
 // ## MODAL
+// let btnUser = document.getElementsByTagName('button')[7];
 
+// let monModal = [
+//     {
+//         titre: "Bienvenue sur Hongo !",
+//         contenu: 
+//     }
+// ]
+
+// btnUser.addEventListener('click', (event) => {
+    
+// })
+
+
+
+// btnUser.addEventListener('click', (event) => {
+//     let divModalFade = document.createElement('div');
+//     divModalFade.classList = "modal fade";
+//     divModalFade.setAttribute('id', 'staticBackdrop');
+//     divModalFade.setAttribute('data-bs-backdrop', 'static');
+//     divModalFade.setAttribute('data-bs-keyboard', 'false');
+//     divModalFade.setAttribute('tabindex', '-1');
+//     divModalFade.setAttribute('aria-labelledby', 'staticBackdropLabel');
+//     divModalFade.setAttribute('aria-hidden', 'true');
+//     let divModalDialog = document.createElement('div');
+//     divModalDialog.classList = "modal-dialog";
+//     divModalFade.appendChild(divModalDialog);
+//     let divModalContent = document.createElement('div');
+//     divModalContent.classList = "modal-content";
+//     divModalDialog.appendChild(divModalContent);
+//     let divModalHeader = document.createElement('div');
+//     let HeaderH5 = document.createElement('h5');
+//     HeaderH5.classList = "modal-title";
+//     HeaderH5.setAttribute('id', 'staticBackdropLabel');
+//     HeaderH5.textContent = "Bienvenue sur Hongo !";
+//     divModalHeader.classList = "modal-header"
+//     divModalHeader.appendChild(HeaderH5);
+//     let btnHeader = document.createElement('button');
+//     btnHeader.setAttribute('type', "button");
+//     btnHeader.setAttribute('data-bs-dismiss',"modal");
+//     btnHeader.setAttribute('data-bs-target',"#staticBackdrop");
+//     btnHeader.classList = "btn-close";
+//     divModalHeader.appendChild(btnHeader);
+//     divModalContent.appendChild(divModalHeader);
+//     let divModalBody = document.createElement("div");
+//     divModalContent.appendChild(divModalBody);
+//     let divModalFooter = document.createElement("div");
+//     divModalContent.appendChild(divModalFooter);
+// })
 
 
 // ## SECTION PRODUCTS
@@ -370,27 +419,21 @@ imgLigneDeux5.insertBefore(carreVert4, img25);
 
 // ## EVENT
 // # LIGNE 1
-// PETITs COEURs
-// let petitscoeurs = [
-//     {
-//         iBalise: "far fa-heart",
-//     }
-// ];
-
 imgLigneUne1.addEventListener('pointerenter', (event) => {
     // CHANGE IMG
     img11.src = images[0].sourceHover;
     img11.classList = "px-1";
     // COEUR
-    let petitcoeur1 = document.createElement('div');
-    imgLigneUne1.insertBefore(petitcoeur1, img11);
+    let petitcoeur1 = document.createElement('btn');
+    imgLigneUne1.appendChild(petitcoeur1);
     let i = document.createElement('i');
     i.classList = "far fa-heart";
+    i.style.position = "absolute"
     i.style.border = "0";
     i.style.borderRadius = "50%";
     i.style.color = "black";
     i.style.backgroundColor = "white"
-    i.style.zIndex = "2";
+    i.style.zIndex = "5";
     i.style.width = "40px";
     petitcoeur1.appendChild("i");
     // BOUTTONS
