@@ -751,6 +751,7 @@ imgLigneUne5.addEventListener('mouseleave', (event) => {
 
 // IMG 1
 let coeurImg21 = document.createElement('button');
+coeurImg21.classList = "btnCoeurArray"
 let iCoeur21 = document.createElement('i');
 let divBtnHover6 = document.createElement('div');
 let btnOptions6 = document.createElement('button');
@@ -810,6 +811,7 @@ imgLigneDeux1.addEventListener('mouseleave', (event) => {
 
 // IMG 2
 let coeurImg22 = document.createElement('button');
+coeurImg22.classList = "btnCoeurArray"
 let iCoeur22 = document.createElement('i');
 let divBtnHover7 = document.createElement('div');
 let btnOptions7 = document.createElement('button');
@@ -824,7 +826,7 @@ btnView7.style.padding = "5px 5px";
 let iBtnView7 = document.createElement('i');
 iBtnView7.classList = "far fa-eye";
 
-imgLigneDeux2.addEventListener('pointerenter', (event) => {
+imgLigneDeux2.addEventListener('mouseenter', (event) => {
     // CHANGE IMG
     img22.src = images[6].sourceHover;
     img22.classList = "px-1";
@@ -857,7 +859,7 @@ imgLigneDeux2.addEventListener('pointerenter', (event) => {
     btnView7.style.width = "48%";
     btnView7.appendChild(iBtnView7);
 })
-imgLigneDeux2.addEventListener('pointerout', (event) => {
+imgLigneDeux2.addEventListener('mouseleave', (event) => {
     // CHANGE IMG
     img22.src = images[6].source;
     img22.classList = "px-1";
@@ -869,6 +871,7 @@ imgLigneDeux2.addEventListener('pointerout', (event) => {
 
 // IMG 3
 let coeurImg23 = document.createElement('button');
+coeurImg23.classList = "btnCoeurArray"
 let iCoeur23 = document.createElement('i');
 let divBtnHover8 = document.createElement('div');
 let btnOptions8 = document.createElement('button');
@@ -883,7 +886,7 @@ btnView8.style.padding = "5px 5px";
 let iBtnView8 = document.createElement('i');
 iBtnView8.classList = "far fa-eye";
 
-imgLigneDeux3.addEventListener('pointerenter', (event) => {
+imgLigneDeux3.addEventListener('mouseenter', (event) => {
     // CHANGE IMG
     img23.src = images[7].sourceHover;
     img23.classList = "px-1";
@@ -916,7 +919,7 @@ imgLigneDeux3.addEventListener('pointerenter', (event) => {
     btnView8.style.width = "48%";
     btnView8.appendChild(iBtnView8);
 })
-imgLigneDeux3.addEventListener('pointerout', (event) => {
+imgLigneDeux3.addEventListener('mouseleave', (event) => {
     // CHANGE IMG
     img23.src = images[7].source;
     img23.classList = "px-1";
@@ -928,6 +931,7 @@ imgLigneDeux3.addEventListener('pointerout', (event) => {
 
 // IMG 4
 let coeurImg24 = document.createElement('button');
+coeurImg24.classList = "btnCoeurArray"
 let iCoeur24 = document.createElement('i');
 let divBtnHover9 = document.createElement('div');
 let btnOptions9 = document.createElement('button');
@@ -942,7 +946,7 @@ btnView9.style.padding = "5px 5px";
 let iBtnView9 = document.createElement('i');
 iBtnView9.classList = "far fa-eye";
 
-imgLigneDeux4.addEventListener('pointerenter', (event) => {
+imgLigneDeux4.addEventListener('mouseenter', (event) => {
     // CHANGE IMG
     img24.src = images[8].sourceHover;
     img24.classList = "px-1";
@@ -975,7 +979,7 @@ imgLigneDeux4.addEventListener('pointerenter', (event) => {
     btnView9.style.width = "48%";
     btnView9.appendChild(iBtnView9);
 })
-imgLigneDeux4.addEventListener('pointerout', (event) => {
+imgLigneDeux4.addEventListener('mouseleave', (event) => {
     // CHANGE IMG
     img24.src = images[8].source;
     img24.classList = "px-1";
@@ -987,6 +991,7 @@ imgLigneDeux4.addEventListener('pointerout', (event) => {
 
 // IMG 5
 let coeurImg25 = document.createElement('button');
+coeurImg25.classList = "btnCoeurArray"
 let iCoeur25 = document.createElement('i');
 let divBtnHover10 = document.createElement('div');
 let btnOptions10 = document.createElement('button');
@@ -1001,7 +1006,7 @@ btnView10.style.padding = "5px 5px";
 let iBtnView10 = document.createElement('i');
 iBtnView10.classList = "far fa-eye";
 
-imgLigneDeux5.addEventListener('pointerenter', (event) => {
+imgLigneDeux5.addEventListener('mouseenter', (event) => {
     // CHANGE IMG
     img25.src = images[9].sourceHover;
     img25.classList = "px-1";
@@ -1034,7 +1039,7 @@ imgLigneDeux5.addEventListener('pointerenter', (event) => {
     btnView10.style.width = "48%";
     btnView10.appendChild(iBtnView10);
 })
-imgLigneDeux5.addEventListener('pointerout', (event) => {
+imgLigneDeux5.addEventListener('mouseleave', (event) => {
     // CHANGE IMG
     img25.src = images[9].source;
     img25.classList = "px-1";
@@ -1045,7 +1050,7 @@ imgLigneDeux5.addEventListener('pointerout', (event) => {
 
 
 
-    
+
 
 // SPAN COEUR VERS NAV      
 let spanBadgeUn = document.getElementById('badgeUn')
@@ -1113,8 +1118,7 @@ coeurImg15.addEventListener('click', () => {
         coeurImg15.classList.add('text-success');
         bdgeUnCount--;
         spanBadgeUn.innerHTML = bdgeUnCount;
-    }
-     if (coeurImg15.classList = 'text-success'){
+    } else {
         coeurImg15.classList.remove('text-success');
         coeurImg15.classList.add('text-dark');
         bdgeUnCount++;
@@ -1128,8 +1132,7 @@ coeurImg21.addEventListener('click', () => {
         coeurImg21.classList.add('text-success');
         bdgeUnCount--;
         spanBadgeUn.innerHTML = bdgeUnCount;
-    }
-     if (coeurImg21.classList = 'text-success'){
+    } else {
         coeurImg21.classList.remove('text-success');
         coeurImg21.classList.add('text-dark');
         bdgeUnCount++;
@@ -1143,8 +1146,7 @@ coeurImg22.addEventListener('click', () => {
         coeurImg22.classList.add('text-success');
         bdgeUnCount--;
         spanBadgeUn.innerHTML = bdgeUnCount;
-    }
-     if (coeurImg22.classList = 'text-success'){
+    } else {
         coeurImg22.classList.remove('text-success');
         coeurImg22.classList.add('text-dark');
         bdgeUnCount++;
@@ -1158,8 +1160,7 @@ coeurImg23.addEventListener('click', () => {
         coeurImg23.classList.add('text-success');
         bdgeUnCount--;
         spanBadgeUn.innerHTML = bdgeUnCount;
-    }
-     if (coeurImg23.classList = 'text-success'){
+    } else {
         coeurImg23.classList.remove('text-success');
         coeurImg23.classList.add('text-dark');
         bdgeUnCount++;
@@ -1173,8 +1174,7 @@ coeurImg24.addEventListener('click', () => {
         coeurImg24.classList.add('text-success');
         bdgeUnCount--;
         spanBadgeUn.innerHTML = bdgeUnCount;
-    }
-     if (coeurImg24.classList = 'text-success'){
+    } else {
         coeurImg24.classList.remove('text-success');
         coeurImg24.classList.add('text-dark');
         bdgeUnCount++;
@@ -1188,8 +1188,7 @@ coeurImg25.addEventListener('click', () => {
         coeurImg25.classList.add('text-success');
         bdgeUnCount--;
         spanBadgeUn.innerHTML = bdgeUnCount;
-    }
-     if (coeurImg25.classList = 'text-success'){
+    } else {
         coeurImg25.classList.remove('text-success');
         coeurImg25.classList.add('text-dark');
         bdgeUnCount++;
@@ -1328,60 +1327,44 @@ btnOptions9.addEventListener('click', () => {
 })
 
 
-// // ## SECTION TESTIMONIALS
+// // // ## SECTION TESTIMONIALS
 let carouselInner = document.getElementsByClassName('carousel-inner')[0];
-// ## CREATION BOUTONS
-let btnPrev = document.createElement('button');
-btnPrev.classList = "carousel-control-prev";
-btnPrev.setAttribute('data-bs-target', '#carouselExampleControls');
-btnPrev.setAttribute('data-bs-slide', 'prev');
+// // ## CIBLAGE BOUTONS
+let btnCarouBefore = document.getElementById('btnCarouselBefore');
+let btnCarouAfter = document.getElementById('btnCarouselAfter');
 
-let btnPrevSpan1 = document.createElement('span');
-btnPrevSpan1.classList = "carousel-control-prev-icon";
-btnPrevSpan1.setAttribute('aria-hidden', 'true');
-let btnPrevSpan2 = document.createElement('span');
-btnPrevSpan2.classList = "visually-hidden";
-btnPrevSpan2.textContent = "Previous";
-
-carouselInner.appendChild(btnPrev);
-btnPrev.appendChild(btnPrevSpan1);
-btnPrev.appendChild(btnPrevSpan2);
+// // let btnLeft = document.getElementsByClassName("btn-left")[0];
+// // let btnRight = document.getElementsByClassName("btn-right")[0];
+// // let testi = document.getElementsByClassName("testi-bg") // CARD
+let cardCarou = document.getElementsByClassName("maCardCarou");
+// // let testiHidden = document.getElementsByClassName("testi-hidden")[0] // ITEM
+let itemCarouCacher = document.getElementsByClassName('monItemCacher');
+// // testi = [...testi]
+// // let k = 0
+cardCarou = [...cardCarou]
+let a = 0;
 
 
-let btnNext = document.createElement('button');
-btnNext.classList = "carousel-control-next bg-secondary";
-btnNext.setAttribute('data-bs-target', '#carouselExampleControls');
-btnNext.setAttribute('data-bs-slide', 'next');
+btnCarouBefore.addEventListener("click", () => {
+    a++
+    if (a > 1) {
+        a = -1
+    }
+    if (a <= 1) {
+        cardCarou.forEach(element => {
+            element.style.transform = `translate(${a * element.getBoundingClientRect().width}px)`;
+        });
+    }
+})
 
-let btnNextSpan1 = document.createElement('span');
-btnNextSpan1.classList = "carousel-control-next-icon";
-btnNextSpan1.setAttribute('aria-hidden', 'true');
-let btnNextSpan2 = document.createElement('span');
-btnNextSpan2.classList = "visually-hidden";
-btnNextSpan2.textContent = "Next";
-
-carouselInner.appendChild(btnNext);
-btnNext.appendChild(btnNextSpan1);
-btnNext.appendChild(btnNextSpan2);
-
-// ## EVENTS
-// VOIR FEUILLE CAHIER
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+btnCarouAfter.addEventListener("click", () => {
+    a--
+    if (a < -1) {
+        a = 1
+    }
+    if (a >= -1) {
+        cardCarou.forEach(element => {
+            element.style.transform = `translate(${a * element.getBoundingClientRect().width}px)`;
+        });
+    }
+})

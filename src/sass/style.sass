@@ -92,6 +92,32 @@ section
     &:nth-of-type(5)
         width: 100%
         background-color: rgb(245,235,223)
+        .itemCarouCacher
+            overflow: hidden
+            max-width: 420px !important
+            display: flex
+            justify-content: center
+            flex-direction: row
+        .maCardCarou
+            transition-duration: 1s
+            flex: 0 0 auto
+            width: 420px
+        .divCarouBtn
+            position: relative
+            #btnCarouselBefore
+                position: absolute
+                bottom: 230px
+                right: 500px
+                background-color: rgb(245,235,223)
+                i
+                    color: black
+            #btnCarouselAfter
+                position: absolute
+                bottom: 230px
+                left: 500px
+                background-color: rgb(245,235,223)
+                i
+                    color: black
         .carousel-inner
             .divTestiImg
                 img
@@ -140,7 +166,7 @@ footer
     input
         background-color: #5e5e5ed7
         border: 0
-        width: 350px
+        width: max-content
     .bgFoot
         background-color: #1b1b1b
         color: #959999

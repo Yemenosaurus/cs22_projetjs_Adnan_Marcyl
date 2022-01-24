@@ -22757,6 +22757,39 @@ section:nth-of-type(5) {
   width: 100%;
   background-color: #f5ebdf;
 }
+section:nth-of-type(5) .itemCarouCacher {
+  overflow: hidden;
+  max-width: 420px !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+section:nth-of-type(5) .maCardCarou {
+  transition-duration: 1s;
+  flex: 0 0 auto;
+  width: 420px;
+}
+section:nth-of-type(5) .divCarouBtn {
+  position: relative;
+}
+section:nth-of-type(5) .divCarouBtn #btnCarouselBefore {
+  position: absolute;
+  bottom: 230px;
+  right: 500px;
+  background-color: #f5ebdf;
+}
+section:nth-of-type(5) .divCarouBtn #btnCarouselBefore i {
+  color: black;
+}
+section:nth-of-type(5) .divCarouBtn #btnCarouselAfter {
+  position: absolute;
+  bottom: 230px;
+  left: 500px;
+  background-color: #f5ebdf;
+}
+section:nth-of-type(5) .divCarouBtn #btnCarouselAfter i {
+  color: black;
+}
 section:nth-of-type(5) .carousel-inner .divTestiImg img {
   border-radius: 50%;
   width: 20%;
@@ -22816,7 +22849,7 @@ footer {
 footer input {
   background-color: #5e5e5ed7;
   border: 0;
-  width: 350px;
+  width: max-content;
 }
 footer .bgFoot {
   background-color: #1b1b1b;

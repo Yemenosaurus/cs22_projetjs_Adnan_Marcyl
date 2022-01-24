@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="navbar p-4">
-            <div class="col-12 d-flex flex-row justify-content-between align-items-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-row justify-content-between align-items-center">
                 <img src="./public/img/logo.png" class="img-fluid" alt="">
                 <div class="navtab">
                     <a href="#Home">HOME</a>
@@ -27,14 +27,17 @@
                     <a href="#Contact" class="mx-2">CONTACT</a>
                 </div>
                 <div class="maNavProfil">
+                    <button><i class="fas fa-moon mx-1"></i></button>
                     <button><i class="fas fa-search mx-1"></i></button>
                     <button><i class="fas fa-user mx-1" data-bs-toggle="modal"
                             data-bs-target="#exampleModal"></i></button>
-                    <button><i class="far fa-heart mx-n1"><span id="badgeUn" class="translate-middle badge rounded-pill bg-danger">
-                        
-                      </span></i></button>
-                    <button><i class="fas fa-shopping-cart mx-n1"><span id="badgeDeux" class="translate-middle badge rounded-pill bg-danger">
-                      </span></i></button>
+                    <button><i class="far fa-heart mx-n1"><span id="badgeUn"
+                                class="translate-middle badge rounded-pill bg-danger">
+
+                            </span></i></button>
+                    <button><i class="fas fa-shopping-cart mx-n1"><span id="badgeDeux"
+                                class="translate-middle badge rounded-pill bg-danger">
+                            </span></i></button>
                 </div>
             </div>
         </div>
@@ -53,7 +56,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Cher utilisateur, souhaitez-vous vous créer un compte ? <br> Si oui, appuyez sur le bouton <strong>"S'inscrire"</strong>. <br> Si vous en possédez déjà un, vous pouvez vous connecter en appuyant sur le bouton <strong>"Se connecter"</strong>.
+                        Cher utilisateur, souhaitez-vous vous créer un compte ? <br> Si oui, appuyez sur le bouton
+                        <strong>"S'inscrire"</strong>. <br> Si vous en possédez déjà un, vous pouvez vous connecter en
+                        appuyant sur le bouton <strong>"Se connecter"</strong>.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Se Connecter</button>
@@ -66,7 +71,8 @@
 
     <section class="sectionune" id="Home">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center mt-5">
+            <div
+                class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center mt-5">
                 <div class="d-flex flex-row justify-content-between align-items-center align-content-center mb-8">
                     <div
                         class="s1navbarGauche col-lg-1 col-md-1 col-sm-1 d-flex flex-column justify-content-center align-items-center align-content-center text-align-left">
@@ -201,12 +207,12 @@
             <div class="d-flex flex-column justify-content-center align-items-center p-5">
                 <h4>Testimonial</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eaque sequi repellat!</p>
-                <div class="col-lg-12 col-md-12 col-sm-12 p-5">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner d-flex flex-row text-center align-items-center">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="p-5">
+                    <div>
+                        <div>
+                            <div>
+                                <div class="itemCarouCacher">
+                                    <div class="maCardCarou mx-3">
                                         <div class="card p-3">
                                             <div class="divFormeMsg fs-7 mb-3"></div>
                                             <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
@@ -225,7 +231,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="maCardCarou">
                                         <div class="card p-3">
                                             <div class="divFormeMsg fs-7 mb-3"></div>
                                             <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
@@ -244,7 +250,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <div class="maCardCarou">
                                         <div class="card p-3">
                                             <div class="divFormeMsg fs-7 mb-3"></div>
                                             <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
@@ -265,69 +271,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="card p-3">
-                                            <div class="divFormeMsg fs-7 mb-3"></div>
-                                            <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus
-                                                accusamus sit ex error non numquam sed!</p>
-                                        </div>
-                                        <div
-                                            class="divTestiImg d-flex flex-column justify-content-center align-items-center my-4">
-                                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                                <img src="./public/img/testimonials/image-1-1.png" class="d-block mx-2"
-                                                    alt="...">
-                                                <div class="d-flex flex-column mx-2">
-                                                    <h6 class="my-n1">Mattie Stepanek</h6>
-                                                    <p class="text-secondary my-1">Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="card p-3">
-                                            <div class="divFormeMsg fs-7 mb-3"></div>
-                                            <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus
-                                                accusamus sit ex error non numquam sed!</p>
-                                        </div>
-                                        <div
-                                            class="divTestiImg d-flex flex-column justify-content-center align-items-center my-4">
-                                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                                <img src="./public/img/testimonials/image-2.png" class="d-block mx-2"
-                                                    alt="...">
-                                                <div class="d-flex flex-column mx-2">
-                                                    <h6 class="my-n1">Mattie Stepanek</h6>
-                                                    <p class="text-secondary my-1">Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-4 col-sm-4">
-                                        <div class="card p-3">
-                                            <div class="divFormeMsg fs-7 mb-3"></div>
-                                            <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
-                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus
-                                                accusamus sit ex error non numquam sed!</p>
-                                        </div>
-                                        <div
-                                            class="divTestiImg d-flex flex-column justify-content-center align-items-center my-4">
-                                            <div class="d-flex flex-row justify-content-center align-items-center">
-                                                <img src="./public/img/testimonials/image-3.png" class="d-block mx-2"
-                                                    alt="...">
-                                                <div class="d-flex flex-column mx-2">
-                                                    <h6 class="my-n1">Mattie Stepanek</h6>
-                                                    <p class="text-secondary my-1">Manager</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="divCarouBtn d-flex flex-row">
+                    <button id="btnCarouselBefore" class="px-2 py-2 mx-5"><i class="fas fa-arrow-left"></i></button>
+                    <button id="btnCarouselAfter" class="px-2 py-2 mx-5"><i class="fas fa-arrow-right"></i></button>
                 </div>
             </div>
         </div>
@@ -335,7 +286,8 @@
 
     <section class="LatestBlog" id="Journal">
         <div class="container-fluid">
-            <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center my-5">
+            <div
+                class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column justify-content-center align-items-center my-5">
                 <h4>Latest Blog</h4>
                 <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates <br> fugiat
                     nisi nam ipsam? Expedita, neque.</p>
@@ -380,9 +332,10 @@
     <section class="contact" id="Contact">
         <div class="row">
             <div class="col-lg-4 col-md-3 col-sm-12 contactGauche">
-                
+
             </div>
-            <div class="col-lg-3 col-md-5 col-sm-12 contactLoc d-flex flex-column justify-content-center align-items-center p-5">
+            <div
+                class="col-lg-3 col-md-5 col-sm-12 contactLoc d-flex flex-column justify-content-center align-items-center p-5">
                 <div class="d-flex flex-row">
                     <div class="d-flex flex-column justify-content-around align-items-center ">
                         <i class="fas fa-map-marker-alt"></i>
@@ -438,7 +391,7 @@
     </section>
 
     <footer>
-        <div class="d-flex divMedia flex-row justify-content-around align-items-center p-4">
+        <div class="d-flex divMedia flex-row justify-content-around align-items-center p-4 flex-wrap">
             <div class="divUne d-flex flex-row justify-content-center align-items-center">
                 <div class="divP mx-2">
                     <p class="">LAST CHANCE TO WIN OUR DISCOUNT !</p>
@@ -496,7 +449,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-lg-1 col-md-1  col-sm-12">
 
             </div>
             <!-- <div class="petitsTitres d-flex flex-row justify-content-between align-items-center">
@@ -515,8 +468,8 @@
                     </div>
                 </div> -->
         </div>
-        <div class="col-12 d-flex flex-column px-8 bgFoot">
-            <div class="divFootSombre d-flex flex-row justify-content-between align-items-center pt-3 pb-1">
+        <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column px-8 bgFoot">
+            <div class="divFootSombre d-flex flex-row justify-content-between align-items-center pt-3 pb-1 flex-wrap">
                 <div class="divSombreP">
                     <p>© 2022 HONGO is Proudly Powered by ThemeZaa</p>
                 </div>
