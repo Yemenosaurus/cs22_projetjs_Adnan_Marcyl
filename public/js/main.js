@@ -451,6 +451,7 @@ imgLigneDeux5.insertBefore(carreVert4, img25);
 
 // IMG 1
 let coeurImg11 = document.createElement('button');
+coeurImg11.classList = "btnCoeurArray"
 let iCoeur11 = document.createElement('i');
 let divBtnHover = document.createElement('div');
 let btnOptions = document.createElement('button');
@@ -464,8 +465,6 @@ btnView.style.border = "0";
 btnView.style.padding = "5px 5px";
 let iBtnView = document.createElement('i');
 iBtnView.classList = "far fa-eye";
-
-
 
 imgLigneUne1.addEventListener('mouseenter', (event) => {
     // CHANGE IMG
@@ -512,6 +511,7 @@ imgLigneUne1.addEventListener('mouseleave', (event) => {
 
 // IMG 2
 let coeurImg12 = document.createElement('button');
+coeurImg12.classList = "btnCoeurArray"
 let iCoeur12 = document.createElement('i');
 let divBtnHover2 = document.createElement('div');
 let btnOptions2 = document.createElement('button');
@@ -571,6 +571,7 @@ imgLigneUne2.addEventListener('mouseleave', (event) => {
 
 // IMG 3
 let coeurImg13 = document.createElement('button');
+coeurImg13.classList = "btnCoeurArray"
 let iCoeur13 = document.createElement('i');
 let divBtnHover3 = document.createElement('div');
 let btnOptions3 = document.createElement('button');
@@ -629,6 +630,7 @@ imgLigneUne3.addEventListener('mouseleave', (event) => {
 
 // IMG 4
 let coeurImg14 = document.createElement('button');
+coeurImg14.classList = "btnCoeurArray"
 let iCoeur14 = document.createElement('i');
 let divBtnHover4 = document.createElement('div');
 let btnOptions4 = document.createElement('button');
@@ -688,6 +690,7 @@ imgLigneUne4.addEventListener('mouseleave', (event) => {
 
 // IMG 5
 let coeurImg15 = document.createElement('button');
+coeurImg15.classList = "btnCoeurArray"
 let iCoeur15 = document.createElement('i');
 let divBtnHover5 = document.createElement('div');
 let btnOptions5 = document.createElement('button');
@@ -1042,6 +1045,289 @@ imgLigneDeux5.addEventListener('pointerout', (event) => {
 
 
 
+    
+
+// SPAN COEUR VERS NAV      
+let spanBadgeUn = document.getElementById('badgeUn')
+let bdgeUnCount = 0;
+coeurImg11.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg11.classList.contains('text-dark')) {
+        coeurImg11.classList.remove('text-dark')
+        coeurImg11.classList.add('text-success');
+        bdgeUnCount--
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    } else {
+        coeurImg11.classList.remove('text-success');
+        coeurImg11.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg12.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg12.classList.contains('text-dark')) {
+        coeurImg12.classList.remove('text-dark')
+        coeurImg12.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    } else {
+        coeurImg12.classList.remove('text-success');
+        coeurImg12.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg13.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg13.classList.contains('text-dark')) {
+        coeurImg13.classList.remove('text-dark')
+        coeurImg13.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    } else {
+        coeurImg13.classList.remove('text-success');
+        coeurImg13.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg14.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg14.classList.contains('text-dark')) {
+        coeurImg14.classList.remove('text-dark')
+        coeurImg14.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    } else {
+        coeurImg14.classList.remove('text-success');
+        coeurImg14.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg15.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg15.classList.contains('text-dark')) {
+        coeurImg15.classList.remove('text-dark')
+        coeurImg15.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+     if (coeurImg15.classList = 'text-success'){
+        coeurImg15.classList.remove('text-success');
+        coeurImg15.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg21.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg21.classList.contains('text-dark')) {
+        coeurImg21.classList.remove('text-dark')
+        coeurImg21.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+     if (coeurImg21.classList = 'text-success'){
+        coeurImg21.classList.remove('text-success');
+        coeurImg21.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg22.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg22.classList.contains('text-dark')) {
+        coeurImg22.classList.remove('text-dark')
+        coeurImg22.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+     if (coeurImg22.classList = 'text-success'){
+        coeurImg22.classList.remove('text-success');
+        coeurImg22.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg23.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg23.classList.contains('text-dark')) {
+        coeurImg23.classList.remove('text-dark')
+        coeurImg23.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+     if (coeurImg23.classList = 'text-success'){
+        coeurImg23.classList.remove('text-success');
+        coeurImg23.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg24.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg24.classList.contains('text-dark')) {
+        coeurImg24.classList.remove('text-dark')
+        coeurImg24.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+     if (coeurImg24.classList = 'text-success'){
+        coeurImg24.classList.remove('text-success');
+        coeurImg24.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+coeurImg25.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (coeurImg25.classList.contains('text-dark')) {
+        coeurImg25.classList.remove('text-dark')
+        coeurImg25.classList.add('text-success');
+        bdgeUnCount--;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+     if (coeurImg25.classList = 'text-success'){
+        coeurImg25.classList.remove('text-success');
+        coeurImg25.classList.add('text-dark');
+        bdgeUnCount++;
+        spanBadgeUn.innerHTML = bdgeUnCount;
+    }
+})
+
+// SPAN CART VERS NAV
+let spanBadgeDeux = document.getElementById('badgeDeux')
+let bdgeDeuxCount = 0;
+btnOptions.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions.classList.contains('text-light')) {
+        btnOptions.classList.remove('text-light');
+        btnOptions.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions.classList.remove('text-danger');
+        btnOptions.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions2.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions2.classList.contains('text-light')) {
+        btnOptions2.classList.remove('text-light');
+        btnOptions2.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions2.classList.remove('text-danger');
+        btnOptions2.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions3.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions3.classList.contains('text-light')) {
+        btnOptions3.classList.remove('text-light');
+        btnOptions3.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions3.classList.remove('text-danger');
+        btnOptions3.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions4.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions4.classList.contains('text-light')) {
+        btnOptions4.classList.remove('text-light');
+        btnOptions4.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions4.classList.remove('text-danger');
+        btnOptions4.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions5.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions5.classList.contains('text-light')) {
+        btnOptions5.classList.remove('text-light');
+        btnOptions5.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions5.classList.remove('text-danger');
+        btnOptions5.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions6.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions6.classList.contains('text-light')) {
+        btnOptions6.classList.remove('text-light');
+        btnOptions6.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions6.classList.remove('text-danger');
+        btnOptions6.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions7.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions7.classList.contains('text-light')) {
+        btnOptions7.classList.remove('text-light');
+        btnOptions7.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions7.classList.remove('text-danger');
+        btnOptions7.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions8.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions8.classList.contains('text-light')) {
+        btnOptions8.classList.remove('text-light');
+        btnOptions8.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions8.classList.remove('text-danger');
+        btnOptions8.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+btnOptions9.addEventListener('click', () => {
+    // spanBadgeUn.innerHTML += event.detail
+    if (btnOptions9.classList.contains('text-light')) {
+        btnOptions9.classList.remove('text-light');
+        btnOptions9.classList.add('text-danger');
+        bdgeDeuxCount++;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    } else {
+        btnOptions9.classList.remove('text-danger');
+        btnOptions9.classList.add('text-light');
+        bdgeDeuxCount--;
+        spanBadgeDeux.innerHTML = bdgeDeuxCount;
+    }
+})
+
+
 // // ## SECTION TESTIMONIALS
 let carouselInner = document.getElementsByClassName('carousel-inner')[0];
 // ## CREATION BOUTONS
@@ -1063,7 +1349,7 @@ btnPrev.appendChild(btnPrevSpan2);
 
 
 let btnNext = document.createElement('button');
-btnNext.classList = "carousel-control-next";
+btnNext.classList = "carousel-control-next bg-secondary";
 btnNext.setAttribute('data-bs-target', '#carouselExampleControls');
 btnNext.setAttribute('data-bs-slide', 'next');
 
