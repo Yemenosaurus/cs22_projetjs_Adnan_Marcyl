@@ -6,28 +6,28 @@ let navI3 = document.getElementsByTagName('i')[2];
 let navI4 = document.getElementsByTagName('i')[3];
 let btnNav = navbar.querySelectorAll('button');
 let aNav = navbar.querySelectorAll('a');
-let imgNav = navbar.getElementsByTagName('img')[0];          
+let imgNav = navbar.getElementsByTagName('img')[0];
 
 // ## SCROLL
-window.addEventListener('scroll',()=>{      
-    if (window.scrollY  >= 705 ) {         
-        navbar.style.backgroundColor = 'black';         
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= 705) {
+        navbar.style.backgroundColor = 'black';
         navbar.style.color = 'white';
         imgNav.setAttribute('src', '../../public/img/white-logo.png');
-        btnNav.forEach(element => {             
-            element.style.color = 'white';             
+        btnNav.forEach(element => {
+            element.style.color = 'white';
             element.classList.remove('text-black')
         })
-        aNav.forEach(element => {             
-            element.style.color = 'white';             
+        aNav.forEach(element => {
+            element.style.color = 'white';
             element.classList.remove('text-black')
         })
-    } else if (window.scrollY <= 704){
+    } else if (window.scrollY <= 704) {
         navbar.style.backgroundColor = "rgb(245,235,223)";
         navbar.style.color = 'black';
         imgNav.setAttribute('src', '../../public/img/logo.png');
-        btnNav.forEach(element => {             
-            element.style.backgroundColor = 'transparent';             
+        btnNav.forEach(element => {
+            element.style.backgroundColor = 'transparent';
             element.classList.add('text-black')
             element.addEventListener('mouseenter', (e) => {
                 element.style.color = "grey";
@@ -38,8 +38,8 @@ window.addEventListener('scroll',()=>{
                 element.style.borderBottom = "none";
             })
         })
-        aNav.forEach(element => {             
-            element.style.backgroundColor = 'transparent';             
+        aNav.forEach(element => {
+            element.style.backgroundColor = 'transparent';
             element.classList.add('text-black')
             element.addEventListener('mouseenter', (e) => {
                 element.style.color = "grey";
@@ -50,7 +50,7 @@ window.addEventListener('scroll',()=>{
                 element.style.borderBottom = "none";
             })
         })
-    }        
+    }
 });
 
 
@@ -90,7 +90,7 @@ window.addEventListener('scroll',()=>{
 // ]
 
 // btnUser.addEventListener('click', (event) => {
-    
+
 // })
 
 
@@ -129,6 +129,11 @@ window.addEventListener('scroll',()=>{
 //     let divModalFooter = document.createElement("div");
 //     divModalContent.appendChild(divModalFooter);
 // })
+
+
+
+
+
 
 
 // ## SECTION PRODUCTS
@@ -186,7 +191,7 @@ let images = [
     },
     {
         nom: "Crewneck Sweatshirt",
-        prix: "$20.00 - $50.00" ,
+        prix: "$20.00 - $50.00",
         source: '../../public/img/fashion/fashion-recent-products-01-b.jpg',
         sourceHover: '../../public/img/fashion/fashion-recent-products-03-a-1-1.jpg'
     },
@@ -206,27 +211,32 @@ let images = [
     {
         nom: "Sleeve Sweater",
         prix: "$120.00",
-        source: '../../public/img/fashion/fashion-recent-products-06-1.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-06-1.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-06-a-1.jpg'
     },
     {
         nom: "Pocket Sweatshirt",
         prix: "$410.00",
-        source: '../../public/img/fashion/fashion-recent-products-07-1.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-07-1.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-07-a-1.jpg'
     },
     {
         nom: "Top With Pleated",
         prix: "$20.00 - $50.00",
-        source: '../../public/img/fashion/fashion-recent-products-08-1.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-08-1.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-08-a.jpg'
     },
     {
         nom: "Cotton Sweater",
         prix: "$155.00",
-        source: '../../public/img/fashion/fashion-recent-products-01-d.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-01-d.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-09-a-1-1.jpg'
     },
     {
         nom: "Texture Plain Regular",
         prix: "$70.00",
-        source: '../../public/img/fashion/fashion-recent-products-10-1.jpg'
+        source: '../../public/img/fashion/fashion-recent-products-10-1.jpg',
+        sourceHover: '../../public/img/fashion/fashion-recent-products-10-a-1.jpg'
     },
 ]
 
@@ -396,6 +406,7 @@ carreVert1.style.backgroundColor = "green";
 carreVert1.style.border = "1px solid white";
 imgLigneUne5.appendChild(carreVert1);
 
+
 let carreVert2 = document.createElement('div');
 carreVert2.textContent = "-14%";
 carreVert2.style.color = "white";
@@ -435,84 +446,599 @@ imgLigneDeux5.insertBefore(carreVert4, img25);
 
 
 // ## EVENT
+
 // # LIGNE 1
-imgLigneUne1.addEventListener('pointerenter', (event) => {
+
+// IMG 1
+let coeurImg11 = document.createElement('button');
+let iCoeur11 = document.createElement('i');
+let divBtnHover = document.createElement('div');
+let btnOptions = document.createElement('button');
+btnOptions.style.border = "0";
+btnOptions.style.borderRight = "1px solid grey";
+btnOptions.style.padding = "5px 5px";
+let iBtnOptions = document.createElement('i');
+iBtnOptions.classList = "fas fa-shopping-cart"
+let btnView = document.createElement('button');
+btnView.style.border = "0";
+btnView.style.padding = "5px 5px";
+let iBtnView = document.createElement('i');
+iBtnView.classList = "far fa-eye";
+
+
+
+imgLigneUne1.addEventListener('mouseenter', (event) => {
     // CHANGE IMG
     img11.src = images[0].sourceHover;
     img11.classList = "px-1";
     // COEUR
-    let petitcoeur1 = document.createElement('btn');
-    imgLigneUne1.appendChild(petitcoeur1);
-    let i = document.createElement('i');
-    i.classList = "far fa-heart";
-    i.style.position = "absolute"
-    i.style.border = "0";
-    i.style.borderRadius = "50%";
-    i.style.color = "black";
-    i.style.backgroundColor = "white"
-    i.style.zIndex = "5";
-    i.style.width = "40px";
-    petitcoeur1.appendChild("i");
-    // BOUTTONS
-    let btnShopUn = document.createElement('button');
-    btnShopUn.classList = "py-1 px-3"
-    btnShopUn.textContent = "TEST";
-    btnShopUn.style.zIndex = "3";
-    imgLigneUne1.insertBefore(btnShopUn, img11);
-    let btnShopDeux = document.createElement('button');
+    coeurImg11.classList = "px-2 py-1"
+    iCoeur11.classList = "far fa-heart";
+    coeurImg11.style.position = "absolute";
+    coeurImg11.style.marginLeft = "180px";
+    coeurImg11.style.marginTop = "15px";
+    coeurImg11.style.color = "black";
+    coeurImg11.style.zIndex = "2";
+    coeurImg11.style.borderRadius = "100%";
+    coeurImg11.style.border = "0";
+    coeurImg11.style.backgroundColor = "white";
+    imgLigneUne1.appendChild(coeurImg11);
+    coeurImg11.appendChild(iCoeur11);
+    // # BOUTONS 
+    imgLigneUne1.appendChild(divBtnHover);
+    divBtnHover.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover.style.position = "relative";
+    divBtnHover.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover.appendChild(btnOptions);
+    btnOptions.classList = "bg-dark text-light";
+    btnOptions.style.width = "48%";
+    btnOptions.appendChild(iBtnOptions)
+    // VIEW
+    divBtnHover.appendChild(btnView);
+    btnView.classList = "bg-dark text-light";
+    btnView.style.width = "48%";
+    btnView.appendChild(iBtnView)
 })
-imgLigneUne1.addEventListener('pointerout', (event) => {
+imgLigneUne1.addEventListener('mouseleave', (event) => {
     img11.src = images[0].source;
     img11.classList = "px-1";
+    coeurImg11.removeChild(iCoeur11);
+    imgLigneUne1.removeChild(coeurImg11);
+    imgLigneUne1.removeChild(divBtnHover);
 })
 
 
 
-imgLigneUne2.addEventListener('pointerenter', (event) => {
+// IMG 2
+let coeurImg12 = document.createElement('button');
+let iCoeur12 = document.createElement('i');
+let divBtnHover2 = document.createElement('div');
+let btnOptions2 = document.createElement('button');
+btnOptions2.style.border = "0";
+btnOptions2.style.borderRight = "1px solid grey";
+btnOptions2.style.padding = "5px 5px";
+let iBtnOptions2 = document.createElement('i');
+iBtnOptions2.classList = "fas fa-shopping-cart";
+let btnView2 = document.createElement('button');
+btnView2.style.border = "0";
+btnView2.style.padding = "5px 5px";
+let iBtnView2 = document.createElement('i');
+iBtnView2.classList = "far fa-eye";
+
+imgLigneUne2.addEventListener('mouseenter', (event) => {
     img12.src = images[1].sourceHover;
     img12.classList = "px-1";
+    // COEUR
+    coeurImg12.classList = "px-2 py-1"
+    iCoeur12.classList = "far fa-heart";
+    coeurImg12.style.position = "absolute";
+    coeurImg12.style.marginLeft = "180px";
+    coeurImg12.style.marginTop = "15px";
+    coeurImg12.style.color = "black";
+    coeurImg12.style.zIndex = "2";
+    coeurImg12.style.borderRadius = "100%";
+    coeurImg12.style.border = "0";
+    coeurImg12.style.backgroundColor = "white";
+    imgLigneUne2.appendChild(coeurImg12);
+    coeurImg12.appendChild(iCoeur12);
+    // # BOUTONS 
+    imgLigneUne2.appendChild(divBtnHover2);
+    divBtnHover2.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover2.style.position = "relative";
+    divBtnHover2.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover2.appendChild(btnOptions2);
+    btnOptions2.classList = "bg-dark text-light";
+    btnOptions2.style.width = "48%";
+    btnOptions2.appendChild(iBtnOptions2)
+    // VIEW
+    divBtnHover2.appendChild(btnView2);
+    btnView2.classList = "bg-dark text-light";
+    btnView2.style.width = "48%";
+    btnView2.appendChild(iBtnView2);
 })
-imgLigneUne2.addEventListener('pointerout', (event) => {
+imgLigneUne2.addEventListener('mouseleave', (event) => {
     img12.src = images[1].source;
     img12.classList = "px-1";
+    coeurImg12.removeChild(iCoeur12);
+    imgLigneUne2.removeChild(coeurImg12);
+    imgLigneUne2.removeChild(divBtnHover2);
 })
 
 
 
-imgLigneUne3.addEventListener('pointerenter', (event) => {
+
+// IMG 3
+let coeurImg13 = document.createElement('button');
+let iCoeur13 = document.createElement('i');
+let divBtnHover3 = document.createElement('div');
+let btnOptions3 = document.createElement('button');
+btnOptions3.style.border = "0";
+btnOptions3.style.borderRight = "1px solid grey";
+btnOptions3.style.padding = "5px 5px";
+let ibtnOptions3 = document.createElement('i');
+ibtnOptions3.classList = "fas fa-shopping-cart";
+let BtnView3 = document.createElement('button');
+BtnView3.style.border = "0";
+BtnView3.style.padding = "5px 5px";
+let iBtnView3 = document.createElement('i');
+iBtnView3.classList = "far fa-eye";
+
+imgLigneUne3.addEventListener('mouseenter', (event) => {
     img13.src = images[2].sourceHover;
     img13.classList = "px-1";
+    // COEUR
+    coeurImg13.classList = "px-2 py-1"
+    iCoeur13.classList = "far fa-heart";
+    coeurImg13.style.position = "absolute";
+    coeurImg13.style.marginLeft = "180px";
+    coeurImg13.style.marginTop = "15px";
+    coeurImg13.style.color = "black";
+    coeurImg13.style.zIndex = "2";
+    coeurImg13.style.borderRadius = "100%";
+    coeurImg13.style.border = "0";
+    coeurImg13.style.backgroundColor = "white";
+    imgLigneUne3.appendChild(coeurImg13);
+    coeurImg13.appendChild(iCoeur13);
+    // # BOUTONS 
+    imgLigneUne3.appendChild(divBtnHover3);
+    divBtnHover3.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover3.style.position = "relative";
+    divBtnHover3.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover3.appendChild(btnOptions3);
+    btnOptions3.classList = "bg-dark text-light";
+    btnOptions3.style.width = "48%";
+    btnOptions3.appendChild(ibtnOptions3)
+    // VIEW
+    divBtnHover3.appendChild(BtnView3);
+    BtnView3.classList = "bg-dark text-light";
+    BtnView3.style.width = "48%";
+    BtnView3.appendChild(iBtnView3);
 })
-imgLigneUne3.addEventListener('pointerout', (event) => {
+imgLigneUne3.addEventListener('mouseleave', (event) => {
     img13.src = images[2].source;
     img13.classList = "px-1";
+    coeurImg13.removeChild(iCoeur13);
+    imgLigneUne3.removeChild(coeurImg13);
+    imgLigneUne3.removeChild(divBtnHover3);
 })
 
 
 
-imgLigneUne4.addEventListener('pointerenter', (event) => {
+// IMG 4
+let coeurImg14 = document.createElement('button');
+let iCoeur14 = document.createElement('i');
+let divBtnHover4 = document.createElement('div');
+let btnOptions4 = document.createElement('button');
+btnOptions4.style.border = "0";
+btnOptions4.style.borderRight = "1px solid grey";
+btnOptions4.style.padding = "5px 5px";
+let ibtnOptions4 = document.createElement('i');
+ibtnOptions4.classList = "fas fa-shopping-cart";
+let btnView4 = document.createElement('button');
+btnView4.style.border = "0";
+btnView4.style.padding = "5px 5px";
+let iBtnView4 = document.createElement('i');
+iBtnView4.classList = "far fa-eye";
+
+imgLigneUne4.addEventListener('mouseenter', (event) => {
     img14.src = images[3].sourceHover;
     img14.classList = "px-1";
+    // COEUR
+    coeurImg14.classList = "px-2 py-1"
+    iCoeur14.classList = "far fa-heart";
+    coeurImg14.style.position = "absolute";
+    coeurImg14.style.marginLeft = "180px";
+    coeurImg14.style.marginTop = "15px";
+    coeurImg14.style.color = "black";
+    coeurImg14.style.zIndex = "2";
+    coeurImg14.style.borderRadius = "100%";
+    coeurImg14.style.border = "0";
+    coeurImg14.style.backgroundColor = "white";
+    imgLigneUne4.appendChild(coeurImg14);
+    coeurImg14.appendChild(iCoeur14);
+    // # BOUTONS 
+    imgLigneUne4.appendChild(divBtnHover4);
+    divBtnHover4.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover4.style.position = "relative";
+    divBtnHover4.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover4.appendChild(btnOptions4);
+    btnOptions4.classList = "bg-dark text-light";
+    btnOptions4.style.width = "48%";
+    btnOptions4.appendChild(ibtnOptions4)
+    // VIEW
+    divBtnHover4.appendChild(btnView4);
+    btnView4.classList = "bg-dark text-light";
+    btnView4.style.width = "48%";
+    btnView4.appendChild(iBtnView4);
 })
-imgLigneUne4.addEventListener('pointerout', (event) => {
+imgLigneUne4.addEventListener('mouseleave', (event) => {
     img14.src = images[3].source;
     img14.classList = "px-1";
+    coeurImg14.removeChild(iCoeur14);
+    imgLigneUne4.removeChild(coeurImg14);
+    imgLigneUne4.removeChild(divBtnHover4);
 })
 
 
 
-imgLigneUne5.addEventListener('pointerenter', (event) => {
+
+// IMG 5
+let coeurImg15 = document.createElement('button');
+let iCoeur15 = document.createElement('i');
+let divBtnHover5 = document.createElement('div');
+let btnOptions5 = document.createElement('button');
+btnOptions5.style.border = "0";
+btnOptions5.style.borderRight = "1px solid grey";
+btnOptions5.style.padding = "5px 5px";
+let iBtnOptions5 = document.createElement('i');
+iBtnOptions5.classList = "fas fa-shopping-cart";
+let btnView5 = document.createElement('button');
+btnView5.style.border = "0";
+btnView5.style.padding = "5px 5px";
+let iBtnView5 = document.createElement('i');
+iBtnView5.classList = "far fa-eye";
+
+imgLigneUne5.addEventListener('mouseenter', (event) => {
     img15.src = images[4].sourceHover;
     img15.classList = "px-1";
-
+    // COEUR
+    coeurImg15.classList = "px-2 py-1"
+    iCoeur15.classList = "far fa-heart";
+    coeurImg15.style.position = "absolute";
+    coeurImg15.style.marginLeft = "180px";
+    coeurImg15.style.marginTop = "15px";
+    coeurImg15.style.color = "black";
+    coeurImg15.style.zIndex = "2";
+    coeurImg15.style.borderRadius = "100%";
+    coeurImg15.style.border = "0";
+    coeurImg15.style.backgroundColor = "white";
+    imgLigneUne5.appendChild(coeurImg15);
+    coeurImg15.appendChild(iCoeur15);
+    // # BOUTONS 
+    imgLigneUne5.appendChild(divBtnHover5);
+    divBtnHover5.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover5.style.position = "relative";
+    divBtnHover5.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover5.appendChild(btnOptions5);
+    btnOptions5.classList = "bg-dark text-light";
+    btnOptions5.style.width = "48%";
+    btnOptions5.appendChild(iBtnOptions5)
+    // VIEW
+    divBtnHover5.appendChild(btnView5);
+    btnView5.classList = "bg-dark text-light";
+    btnView5.style.width = "48%";
+    btnView5.appendChild(iBtnView5);
 })
-imgLigneUne5.addEventListener('pointerout', (event) => {
+imgLigneUne5.addEventListener('mouseleave', (event) => {
     img15.src = images[4].source;
     img15.classList = "px-1";
+    coeurImg15.removeChild(iCoeur15);
+    imgLigneUne5.removeChild(coeurImg15);
+    imgLigneUne5.removeChild(divBtnHover5);
 })
 
 
 
+// # LIGNE 2
+
+// IMG 1
+let coeurImg21 = document.createElement('button');
+let iCoeur21 = document.createElement('i');
+let divBtnHover6 = document.createElement('div');
+let btnOptions6 = document.createElement('button');
+btnOptions6.style.border = "0";
+btnOptions6.style.borderRight = "1px solid grey";
+btnOptions6.style.padding = "5px 5px";
+let iBtnOptions6 = document.createElement('i');
+iBtnOptions6.classList = "fas fa-shopping-cart";
+let btnView6 = document.createElement('button');
+btnView6.style.border = "0";
+btnView6.style.padding = "5px 5px";
+let iBtnView6 = document.createElement('i');
+iBtnView6.classList = "far fa-eye";
+
+imgLigneDeux1.addEventListener('mouseenter', (event) => {
+    // CHANGE IMG
+    img21.src = images[5].sourceHover;
+    img21.classList = "px-1";
+    // COEUR
+    coeurImg21.classList = "px-2 py-1"
+    iCoeur21.classList = "far fa-heart";
+    coeurImg21.style.position = "absolute";
+    coeurImg21.style.marginLeft = "60px";
+    coeurImg21.style.marginTop = "-350px";
+    coeurImg21.style.color = "black";
+    coeurImg21.style.zIndex = "2";
+    coeurImg21.style.borderRadius = "100%";
+    coeurImg21.style.border = "0";
+    coeurImg21.style.backgroundColor = "white";
+    imgLigneDeux1.appendChild(coeurImg21);
+    coeurImg21.appendChild(iCoeur21);
+    // # BOUTONS 
+    imgLigneDeux1.appendChild(divBtnHover6);
+    divBtnHover6.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover6.style.position = "relative";
+    divBtnHover6.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover6.appendChild(btnOptions6);
+    btnOptions6.classList = "bg-dark text-light";
+    btnOptions6.style.width = "48%";
+    btnOptions6.appendChild(iBtnOptions6)
+    // VIEW
+    divBtnHover6.appendChild(btnView6);
+    btnView6.classList = "bg-dark text-light";
+    btnView6.style.width = "48%";
+    btnView6.appendChild(iBtnView6);
+})
+imgLigneDeux1.addEventListener('mouseleave', (event) => {
+    // CHANGE IMG
+    img21.src = images[5].source;
+    img21.classList = "px-1";
+    coeurImg21.removeChild(iCoeur21);
+    imgLigneDeux1.removeChild(coeurImg21);
+    imgLigneDeux1.removeChild(divBtnHover6);
+})
+
+
+// IMG 2
+let coeurImg22 = document.createElement('button');
+let iCoeur22 = document.createElement('i');
+let divBtnHover7 = document.createElement('div');
+let btnOptions7 = document.createElement('button');
+btnOptions7.style.border = "0";
+btnOptions7.style.borderRight = "1px solid grey";
+btnOptions7.style.padding = "5px 5px";
+let iBtnOptions7 = document.createElement('i');
+iBtnOptions7.classList = "fas fa-shopping-cart";
+let btnView7 = document.createElement('button');
+btnView7.style.border = "0";
+btnView7.style.padding = "5px 5px";
+let iBtnView7 = document.createElement('i');
+iBtnView7.classList = "far fa-eye";
+
+imgLigneDeux2.addEventListener('pointerenter', (event) => {
+    // CHANGE IMG
+    img22.src = images[6].sourceHover;
+    img22.classList = "px-1";
+    // COEUR
+    coeurImg22.classList = "px-2 py-1"
+    iCoeur22.classList = "far fa-heart";
+    coeurImg22.style.position = "absolute";
+    coeurImg22.style.marginLeft = "60px";
+    coeurImg22.style.marginTop = "-350px";
+    coeurImg22.style.color = "black";
+    coeurImg22.style.zIndex = "2";
+    coeurImg22.style.borderRadius = "100%";
+    coeurImg22.style.border = "0";
+    coeurImg22.style.backgroundColor = "white";
+    imgLigneDeux2.appendChild(coeurImg22);
+    coeurImg22.appendChild(iCoeur22);
+    // # BOUTONS 
+    imgLigneDeux2.appendChild(divBtnHover7);
+    divBtnHover7.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover7.style.position = "relative";
+    divBtnHover7.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover7.appendChild(btnOptions7);
+    btnOptions7.classList = "bg-dark text-light";
+    btnOptions7.style.width = "48%";
+    btnOptions7.appendChild(iBtnOptions7)
+    // VIEW
+    divBtnHover7.appendChild(btnView7);
+    btnView7.classList = "bg-dark text-light";
+    btnView7.style.width = "48%";
+    btnView7.appendChild(iBtnView7);
+})
+imgLigneDeux2.addEventListener('pointerout', (event) => {
+    // CHANGE IMG
+    img22.src = images[6].source;
+    img22.classList = "px-1";
+    coeurImg22.removeChild(iCoeur22);
+    imgLigneDeux2.removeChild(coeurImg22);
+    imgLigneDeux2.removeChild(divBtnHover7);
+})
+
+
+// IMG 3
+let coeurImg23 = document.createElement('button');
+let iCoeur23 = document.createElement('i');
+let divBtnHover8 = document.createElement('div');
+let btnOptions8 = document.createElement('button');
+btnOptions8.style.border = "0";
+btnOptions8.style.borderRight = "1px solid grey";
+btnOptions8.style.padding = "5px 5px";
+let iBtnOptions8 = document.createElement('i');
+iBtnOptions8.classList = "fas fa-shopping-cart";
+let btnView8 = document.createElement('button');
+btnView8.style.border = "0";
+btnView8.style.padding = "5px 5px";
+let iBtnView8 = document.createElement('i');
+iBtnView8.classList = "far fa-eye";
+
+imgLigneDeux3.addEventListener('pointerenter', (event) => {
+    // CHANGE IMG
+    img23.src = images[7].sourceHover;
+    img23.classList = "px-1";
+    // COEUR
+    coeurImg23.classList = "px-2 py-1"
+    iCoeur23.classList = "far fa-heart";
+    coeurImg23.style.position = "absolute";
+    coeurImg23.style.marginLeft = "60px";
+    coeurImg23.style.marginTop = "-350px";
+    coeurImg23.style.color = "black";
+    coeurImg23.style.zIndex = "2";
+    coeurImg23.style.borderRadius = "100%";
+    coeurImg23.style.border = "0";
+    coeurImg23.style.backgroundColor = "white";
+    imgLigneDeux3.appendChild(coeurImg23);
+    coeurImg23.appendChild(iCoeur23);
+    // # BOUTONS 
+    imgLigneDeux3.appendChild(divBtnHover8);
+    divBtnHover8.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover8.style.position = "relative";
+    divBtnHover8.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover8.appendChild(btnOptions8);
+    btnOptions8.classList = "bg-dark text-light";
+    btnOptions8.style.width = "48%";
+    btnOptions8.appendChild(iBtnOptions8);
+    // VIEW
+    divBtnHover8.appendChild(btnView8);
+    btnView8.classList = "bg-dark text-light";
+    btnView8.style.width = "48%";
+    btnView8.appendChild(iBtnView8);
+})
+imgLigneDeux3.addEventListener('pointerout', (event) => {
+    // CHANGE IMG
+    img23.src = images[7].source;
+    img23.classList = "px-1";
+    coeurImg23.removeChild(iCoeur23);
+    imgLigneDeux3.removeChild(coeurImg23);
+    imgLigneDeux3.removeChild(divBtnHover8);
+})
+
+
+// IMG 4
+let coeurImg24 = document.createElement('button');
+let iCoeur24 = document.createElement('i');
+let divBtnHover9 = document.createElement('div');
+let btnOptions9 = document.createElement('button');
+btnOptions9.style.border = "0";
+btnOptions9.style.borderRight = "1px solid grey";
+btnOptions9.style.padding = "5px 5px";
+let iBtnOptions9 = document.createElement('i');
+iBtnOptions9.classList = "fas fa-shopping-cart";
+let btnView9 = document.createElement('button');
+btnView9.style.border = "0";
+btnView9.style.padding = "5px 5px";
+let iBtnView9 = document.createElement('i');
+iBtnView9.classList = "far fa-eye";
+
+imgLigneDeux4.addEventListener('pointerenter', (event) => {
+    // CHANGE IMG
+    img24.src = images[8].sourceHover;
+    img24.classList = "px-1";
+    // COEUR
+    coeurImg24.classList = "px-2 py-1"
+    iCoeur24.classList = "far fa-heart";
+    coeurImg24.style.position = "absolute";
+    coeurImg24.style.marginLeft = "60px";
+    coeurImg24.style.marginTop = "-350px";
+    coeurImg24.style.color = "black";
+    coeurImg24.style.zIndex = "2";
+    coeurImg24.style.borderRadius = "100%";
+    coeurImg24.style.border = "0";
+    coeurImg24.style.backgroundColor = "white";
+    imgLigneDeux4.appendChild(coeurImg24);
+    coeurImg24.appendChild(iCoeur24);
+    // # BOUTONS 
+    imgLigneDeux4.appendChild(divBtnHover9);
+    divBtnHover9.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover9.style.position = "relative";
+    divBtnHover9.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover9.appendChild(btnOptions9);
+    btnOptions9.classList = "bg-dark text-light";
+    btnOptions9.style.width = "48%";
+    btnOptions9.appendChild(iBtnOptions9);
+    // VIEW
+    divBtnHover9.appendChild(btnView9);
+    btnView9.classList = "bg-dark text-light";
+    btnView9.style.width = "48%";
+    btnView9.appendChild(iBtnView9);
+})
+imgLigneDeux4.addEventListener('pointerout', (event) => {
+    // CHANGE IMG
+    img24.src = images[8].source;
+    img24.classList = "px-1";
+    coeurImg24.removeChild(iCoeur24);
+    imgLigneDeux4.removeChild(coeurImg24);
+    imgLigneDeux4.removeChild(divBtnHover9);
+})
+
+
+// IMG 5
+let coeurImg25 = document.createElement('button');
+let iCoeur25 = document.createElement('i');
+let divBtnHover10 = document.createElement('div');
+let btnOptions10 = document.createElement('button');
+btnOptions10.style.border = "0";
+btnOptions10.style.borderRight = "1px solid grey";
+btnOptions10.style.padding = "5px 5px";
+let iBtnOptions10 = document.createElement('i');
+iBtnOptions10.classList = "fas fa-shopping-cart";
+let btnView10 = document.createElement('button');
+btnView10.style.border = "0";
+btnView10.style.padding = "5px 5px";
+let iBtnView10 = document.createElement('i');
+iBtnView10.classList = "far fa-eye";
+
+imgLigneDeux5.addEventListener('pointerenter', (event) => {
+    // CHANGE IMG
+    img25.src = images[9].sourceHover;
+    img25.classList = "px-1";
+    // COEUR
+    coeurImg25.classList = "px-2 py-1"
+    iCoeur25.classList = "far fa-heart";
+    coeurImg25.style.position = "absolute";
+    coeurImg25.style.marginLeft = "60px";
+    coeurImg25.style.marginTop = "-350px";
+    coeurImg25.style.color = "black";
+    coeurImg25.style.zIndex = "2";
+    coeurImg25.style.borderRadius = "100%";
+    coeurImg25.style.border = "0";
+    coeurImg25.style.backgroundColor = "white";
+    imgLigneDeux5.appendChild(coeurImg25);
+    coeurImg25.appendChild(iCoeur25);
+    // # BOUTONS 
+    imgLigneDeux5.appendChild(divBtnHover10);
+    divBtnHover10.classList = "d-flex flex-row w-100 justify-content-center align-items-center";
+    divBtnHover10.style.position = "relative";
+    divBtnHover10.style.bottom = "100px";
+    // OPTIONS
+    divBtnHover10.appendChild(btnOptions10);
+    btnOptions10.classList = "bg-dark text-light";
+    btnOptions10.style.width = "48%";
+    btnOptions10.appendChild(iBtnOptions10);
+    // VIEW
+    divBtnHover10.appendChild(btnView10);
+    btnView10.classList = "bg-dark text-light";
+    btnView10.style.width = "48%";
+    btnView10.appendChild(iBtnView10);
+})
+imgLigneDeux5.addEventListener('pointerout', (event) => {
+    // CHANGE IMG
+    img25.src = images[9].source;
+    img25.classList = "px-1";
+    coeurImg25.removeChild(iCoeur25);
+    imgLigneDeux5.removeChild(coeurImg25);
+    imgLigneDeux5.removeChild(divBtnHover10);
+})
 
 
 
@@ -573,219 +1099,3 @@ btnNext.appendChild(btnNextSpan2);
 
 
 
-
-
-// let sectionTesti = document.getElementsByClassName('sectionTestimonials')[0];
-// sectionTesti.style.backgroundColor = "rgb(245,235,223)"
-
-// let divCont2 = document.createElement('div');
-// divCont2.classList = "container-fluid";
-// sectionTesti.appendChild(divCont2);
-
-// let divTesti = document.createElement('div');
-// divTesti.classList = "d-flex flex-column justify-content-center align-items-center p-5";
-// divCont2.appendChild(divTesti);
-
-// let h4Testi = document.createElement('h4');
-// h4Testi.textContent = "Testimonial";
-// divTesti.appendChild(h4Testi);
-// let pTesti = document.createElement('p');
-// pTesti.textContent = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eaque sequi repellat!";
-// divTesti.appendChild(pTesti);
-
-// let colTesti = document.createElement('div');
-// colTesti.classList = "col-12 p-5";
-// divTesti.appendChild(colTesti);
-
-// let divCarousel = document.createElement('div');
-// divCarousel.classList = "carousel slide";
-// divCarousel.setAttribute.id = "carouselExampleControls"
-// divCarousel.setAttribute('data-bs-ride', 'carousel')
-// colTesti.appendChild(divCarousel);
-
-// let divCarouselInner = document.createElement('div');
-// divCarouselInner.classList = "carousel-inner d-flex flex-row text-center justify-content-center align-items-center";
-// divCarousel.appendChild(divCarouselInner);
-
-// // ITEM ACTIVE
-// let divCarouselItemActive = document.createElement('div');
-// divCarouselItemActive.classList = "carousel-item active";
-// divCarouselInner.appendChild(divCarouselItemActive);
-
-// let row = document.createElement('row');
-// row.classList = "row";
-// divCarouselItemActive.appendChild(row);
-
-
-
-// // ACTIVE - COL 4 (1)
-// let col41 = document.createElement('div');
-// col41.classList = "col-4";
-// row.appendChild(col41);
-
-// let card = document.createElement('div');
-// card.classList = "card p-3";
-// col41.appendChild(card);
-
-// let divFormeMsg = document.createElement('div');
-// divFormeMsg.style.backgroundColor = "#fffffff5";
-// divFormeMsg.classList = "divFormeMsg fs-7 mb-3";
-// divFormeMsg.style.alignContent = "center"
-// card.appendChild(divFormeMsg);
-
-// let pFormeMsg11 = document.createElement("p");
-// pFormeMsg11.classList = "fs-6";
-// pFormeMsg11.textContent = "WE LOVE";
-// pFormeMsg11.style.fontWeight = "bold";
-// divFormeMsg.appendChild(pFormeMsg11);
-// let pFormeMsg12 = document.createElement("p");
-// pFormeMsg12.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg.appendChild(pFormeMsg12);
-
-// let divTestiImg = document.createElement('div');
-// divTestiImg.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col41.appendChild(divTestiImg);
-
-// let divTestiImgFlex = document.createElement('div');
-// divTestiImgFlex.classList = "d-flex flex-row justify-content-center align-items-center";
-// col41.appendChild(divTestiImgFlex);
-
-// // IN
-// let imgActiveItem = document.createElement('img');
-// imgActiveItem.style.borderRadius = "50%";
-// imgActiveItem.style.width = "20%";
-// imgActiveItem.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem.classList = "d-block mx-2"
-// divTestiImgFlex.appendChild(imgActiveItem);
-
-// let TestiFlexText = document.createElement('div');
-// TestiFlexText.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex.appendChild(TestiFlexText);
-
-// let h6TestiText = document.createElement('h6');
-// h6TestiText.textContent = "Mattie Stepanek";
-// h6TestiText.classList = "my-n1";
-// let pTestiText = document.createElement('p');
-// pTestiText.textContent = "Manager";
-// pTestiText.classList = "text-secondary my-1";
-// TestiFlexText.appendChild(h6TestiText);
-// TestiFlexText.appendChild(pTestiText);
-
-
-
-
-
-
-
-// // ACTIVE - COL 4 (2)
-// let col42 = document.createElement('div');
-// col42.classList = "col-4";
-// row.appendChild(col42);
-
-// let card2 = document.createElement('div');
-// card2.classList = "card p-3";
-// col42.appendChild(card2);
-
-// let divFormeMsg2 = document.createElement('div');
-// divFormeMsg2.style.backgroundColor = "#fffffff5";
-// divFormeMsg2.classList = "divFormeMsg fs-7 mb-3";
-// divFormeMsg2.style.alignContent = "center"
-// card2.appendChild(divFormeMsg2);
-
-// let pFormeMsg21 = document.createElement("p");
-// pFormeMsg21.classList = "fs-6";
-// pFormeMsg21.textContent = "WE LOVE";
-// pFormeMsg21.style.fontWeight = "bold";
-// divFormeMsg2.appendChild(pFormeMsg21);
-// let pFormeMsg22 = document.createElement("p");
-// pFormeMsg22.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg2.appendChild(pFormeMsg22);
-
-// let divTestiImg2 = document.createElement('div');
-// divTestiImg2.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col42.appendChild(divTestiImg2);
-
-// let divTestiImgFlex2 = document.createElement('div');
-// divTestiImgFlex2.classList = "d-flex flex-row justify-content-center align-items-center";
-// col42.appendChild(divTestiImgFlex2);
-
-// // IN
-// let imgActiveItem2 = document.createElement('img');
-// imgActiveItem2.style.borderRadius = "50%";
-// imgActiveItem2.style.width = "20%";
-// imgActiveItem2.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem2.classList = "d-block mx-2"
-// divTestiImgFlex2.appendChild(imgActiveItem2);
-
-// let TestiFlex2 = document.createElement('div');
-// TestiFlex2.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex2.appendChild(TestiFlex2);
-
-// let h6TestiText2 = document.createElement('h6');
-// h6TestiText2.textContent = "Mattie Stepanek";
-// h6TestiText2.classList = "my-n1";
-// let pTestiText2 = document.createElement('p');
-// pTestiText2.textContent = "Manager";
-// pTestiText2.classList = "text-secondary my-1";
-// TestiFlex2.appendChild(h6TestiText2);
-// TestiFlex2.appendChild(pTestiText2);
-
-
-
-
-
-
-
-
-// // ACTIVE - COL 4 (3)
-// let col43 = document.createElement('div');
-// col43.classList = "col-4";
-// row.appendChild(col43);
-
-// let card3 = document.createElement('div');
-// card3.classList = "card p-3";
-// col43.appendChild(card3);
-
-// let divFormeMsg3 = document.createElement('div');
-// divFormeMsg3.style.backgroundColor = "#fffffff5";
-// divFormeMsg3.classList = "divFormeMsg fs-7 mb-3";
-// divFormeMsg3.style.alignContent = "center"
-// card3.appendChild(divFormeMsg3);
-
-// let pFormeMsg31 = document.createElement("p");
-// pFormeMsg31.classList = "fs-6";
-// pFormeMsg31.textContent = "WE LOVE";
-// pFormeMsg31.style.fontWeight = "bold";
-// divFormeMsg3.appendChild(pFormeMsg31);
-// let pFormeMsg32 = document.createElement("p");
-// pFormeMsg32.textContent = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. A magnam natus accusamus sit ex error non numquam sed"
-// divFormeMsg3.appendChild(pFormeMsg32);
-
-// let divTestiImg3 = document.createElement('div');
-// divTestiImg3.classList = "d-flex flex-column justify-content-center align-items-center my-4";
-// col43.appendChild(divTestiImg3);
-
-// let divTestiImgFlex3 = document.createElement('div');
-// divTestiImgFlex3.classList = "d-flex flex-row justify-content-center align-items-center";
-// col43.appendChild(divTestiImgFlex3);
-
-// // IN
-// let imgActiveItem3 = document.createElement('img');
-// imgActiveItem3.style.borderRadius = "50%";
-// imgActiveItem3.style.width = "20%";
-// imgActiveItem3.setAttribute('src', '../../public/img/testimonials/image-1-1.png');
-// imgActiveItem3.classList = "d-block mx-2"
-// divTestiImgFlex3.appendChild(imgActiveItem3);
-
-// let TestiFlex3 = document.createElement('div');
-// TestiFlex3.classList = "d-flex flex-column mx-2";
-// divTestiImgFlex3.appendChild(TestiFlex3);
-
-// let h6TestiText3 = document.createElement('h6');
-// h6TestiText3.textContent = "Mattie Stepanek";
-// h6TestiText3.classList = "my-n1";
-// let pTestiText3 = document.createElement('p');
-// pTestiText3.textContent = "Manager";
-// pTestiText3.classList = "text-secondary my-1";
-// TestiFlex3.appendChild(h6TestiText3);
-// TestiFlex3.appendChild(pTestiText3);

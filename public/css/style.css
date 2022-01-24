@@ -1,7 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Poppins";
+  font-family: "Poppins Thin";
   src: url("../../public/fonts/Poppins/Poppins-Thin.ttf");
+}
+@font-face {
+  font-family: "Poppins Light";
+  src: url("../../public/fonts/Poppins/Poppins-Light.ttf");
 }
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -22657,7 +22661,7 @@ textarea.form-control-lg {
   }
 }
 * {
-  font-family: "Poppins";
+  font-family: "Poppins Thin";
 }
 
 body {
@@ -22735,6 +22739,9 @@ section:nth-of-type(2) .maCollection {
 }
 section:nth-of-type(2) #AboutCompanyH4 {
   text-align: mixed;
+}
+section:nth-of-type(2) .AboutCompany {
+  font-family: "Poppins Light";
 }
 section:nth-of-type(3) {
   width: 100%;
