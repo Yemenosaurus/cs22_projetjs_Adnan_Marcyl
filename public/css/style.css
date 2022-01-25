@@ -22664,6 +22664,46 @@ textarea.form-control-lg {
   font-family: "Poppins Thin";
 }
 
+.modeMoon {
+  background-color: #011122;
+  color: white;
+}
+.modeMoon section:nth-of-type(1) {
+  background-color: #031629;
+  color: white;
+}
+.modeMoon section:nth-of-type(1) .WomenWord p {
+  color: black;
+}
+.modeMoon section:nth-of-type(2) .AboutCompany {
+  color: white;
+}
+.modeMoon section:nth-of-type(3) {
+  color: white;
+  background-color: #031629;
+}
+.modeMoon section:nth-of-type(5) {
+  background-color: #031629;
+}
+.modeMoon section:nth-of-type(5) .maCardCarou {
+  color: black;
+  background-color: #022f5c;
+}
+.modeMoon section:nth-of-type(5) .maCardCarou card {
+  color: white;
+  background-color: #031629;
+}
+.modeMoon section:nth-of-type(7) .mesAdresses {
+  color: white;
+  background-color: #022f5c;
+}
+.modeMoon section footer {
+  background-color: #022f5c;
+}
+.modeMoon section footer .bgfoot {
+  background-color: #031629;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -22715,7 +22755,7 @@ section:nth-of-type(1) .WomenWord {
   color: white;
   position: absolute;
   overflow: hidden;
-  top: 70%;
+  top: 65%;
   left: 20%;
   width: max-content;
 }
@@ -22756,6 +22796,11 @@ section:nth-of-type(3) button {
 section:nth-of-type(5) {
   width: 100%;
   background-color: #f5ebdf;
+}
+section:nth-of-type(5) img {
+  border: 0;
+  border-radius: 50%;
+  width: 70px;
 }
 section:nth-of-type(5) .itemCarouCacher {
   overflow: hidden;
@@ -22846,6 +22891,9 @@ footer {
   color: #c9c6c6;
   background-color: #252525e7;
 }
+footer .MesColSpeciales h6, footer .MesColSpeciales .h6 {
+  font-size: 5px;
+}
 footer input {
   background-color: #5e5e5ed7;
   border: 0;
@@ -22857,6 +22905,9 @@ footer .bgFoot {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  section:nth-of-type(1) .WomenWord p {
+    width: 100px;
+  }
   section:nth-of-type(2) .maCollection img {
     margin-top: 20px;
   }
@@ -22867,17 +22918,90 @@ footer .bgFoot {
   section:nth-of-type(3) .FashionBrandText {
     margin-top: 40px;
   }
+  section:nth-of-type(5) .spcialP {
+    width: 100px;
+  }
+  section:nth-of-type(5) .divCarouBtn {
+    position: relative;
+  }
+  section:nth-of-type(5) #btnCarouselBefore {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #f5ebdf;
+  }
+  section:nth-of-type(5) #btnCarouselBefore i {
+    color: black;
+  }
+  section:nth-of-type(5) #btnCarouselAfter {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #f5ebdf;
+  }
+  section:nth-of-type(5) #btnCarouselAfter i {
+    color: black;
+  }
+
+  footer .rowImgFoot1 {
+    flex-wrap: wrap;
+  }
+  footer .rowImgFoot2 {
+    flex-wrap: wrap;
+  }
+  footer .divMedia p {
+    width: 10px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  section:nth-of-type(1) .WomenWord p {
+    z-index: 50;
+    width: 500px;
+    position: absolute;
+    bottom: 50px;
+  }
+  section:nth-of-type(1) .s1Imaginaire {
+    margin-right: 30px;
+  }
   section:nth-of-type(2) .maCollection img {
     margin-top: 20px;
   }
   section:nth-of-type(3) .FashionBrandText {
     margin-top: 40px;
   }
-
-  footer .divMedia {
+  section:nth-of-type(5) {
     display: flex;
+    flex-wrap: wrap;
+  }
+  section:nth-of-type(5) .divCarouBtn {
+    position: relative;
+  }
+  section:nth-of-type(5) #btnCarouselBefore {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: #f5ebdf;
+  }
+  section:nth-of-type(5) #btnCarouselBefore i {
+    color: black;
+  }
+  section:nth-of-type(5) #btnCarouselAfter {
+    position: absolute;
+    bottom: 0px;
+    right: 200px;
+    background-color: #f5ebdf;
+  }
+  section:nth-of-type(5) #btnCarouselAfter i {
+    color: black;
+  }
+
+  footer .divMedia p {
+    width: 10px;
+  }
+  footer .rowImgFoot1 {
+    flex-wrap: wrap;
+  }
+  footer .rowImgFoot2 {
     flex-wrap: wrap;
   }
 }

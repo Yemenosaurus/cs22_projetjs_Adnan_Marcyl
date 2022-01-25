@@ -27,7 +27,7 @@
                     <a href="#Contact" class="mx-2">CONTACT</a>
                 </div>
                 <div class="maNavProfil">
-                    <button><i class="fas fa-moon mx-1"></i></button>
+                    <button onclick="myMoon()" class="Moon"><i class="fas fa-moon mx-1"></i></button>
                     <button><i class="fas fa-search mx-1"></i></button>
                     <button><i class="fas fa-user mx-1" data-bs-toggle="modal"
                             data-bs-target="#exampleModal"></i></button>
@@ -41,10 +41,7 @@
                 </div>
             </div>
         </div>
-        <!-- Button trigger modal -->
-        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Launch static backdrop modal
-        </button> -->
+        
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -100,9 +97,9 @@
                         class="s1Img col-lg-2 col-md-2 col-sm-2 d-flex flex-column justify-content-between align-items-center align-content-center mx-3">
                     </div>
                 </div>
-                <!-- <div class="WomenWord mt-5">
+                <div class="WomenWord mt-5">
                     <p><strong>women</strong></p>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -207,12 +204,12 @@
             <div class="d-flex flex-column justify-content-center align-items-center p-5">
                 <h4>Testimonial</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam eaque sequi repellat!</p>
-                <div class="p-5">
+                <div class="specialP p-5">
                     <div>
                         <div>
                             <div>
                                 <div class="itemCarouCacher">
-                                    <div class="maCardCarou mx-3">
+                                    <div class="maCardCarou mx-1">
                                         <div class="card p-3">
                                             <div class="divFormeMsg fs-7 mb-3"></div>
                                             <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
@@ -231,7 +228,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="maCardCarou">
+                                    <div class="maCardCarou mx-1">
                                         <div class="card p-3">
                                             <div class="divFormeMsg fs-7 mb-3"></div>
                                             <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
@@ -250,7 +247,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="maCardCarou">
+                                    <div class="maCardCarou mx-1">
                                         <div class="card p-3">
                                             <div class="divFormeMsg fs-7 mb-3"></div>
                                             <p class="fs-6"><strong>WE LOVE DIGITAL AGENCIES</strong></p>
@@ -276,7 +273,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="divCarouBtn d-flex flex-row">
+                <div class="divCarouBtn d-flex flex-row flex-wrap">
                     <button id="btnCarouselBefore" class="px-2 py-2 mx-5"><i class="fas fa-arrow-left"></i></button>
                     <button id="btnCarouselAfter" class="px-2 py-2 mx-5"><i class="fas fa-arrow-right"></i></button>
                 </div>
@@ -335,7 +332,7 @@
 
             </div>
             <div
-                class="col-lg-3 col-md-5 col-sm-12 contactLoc d-flex flex-column justify-content-center align-items-center p-5">
+                class="mesAdresses col-lg-3 col-md-5 col-sm-12 contactLoc d-flex flex-column justify-content-center align-items-center p-5">
                 <div class="d-flex flex-row">
                     <div class="d-flex flex-column justify-content-around align-items-center ">
                         <i class="fas fa-map-marker-alt"></i>
@@ -402,46 +399,69 @@
                 </div>
             </div>
             <div class="divDeux d-flex flex-row justify-content-center align-items-center">
-                <p class="mx-2 mt-1">ON SOCIAL NETWORKS</p>
+                <p class="mx-6 mt-1">ON SOCIAL NETWORKS</p>
                 <div class="divIconesFoot d-flex flex-row align-items-center mt-n3">
-                    <i class="fab fa-facebook-f mx-1"></i>
-                    <i class="fab fa-twitter mx-1"></i>
-                    <i class="fab fa-linkedin-in mx-1"></i>
-                    <i class="fab fa-instagram mx-1"></i>
-                    <i class="fab fa-pinterest-p mx-1"></i>
+                    <i class="fab fa-facebook-f mx-2"></i>
+                    <i class="fab fa-twitter mx-2"></i>
+                    <i class="fab fa-linkedin-in mx-2"></i>
+                    <i class="fab fa-instagram mx-2"></i>
+                    <i class="fab fa-pinterest-p mx-2"></i>
                 </div>
             </div>
         </div>
         <hr class="mt-n3">
-        <div class="d-flex flex-row justify-content-around align-items-center">
+        <div class="d-flex flex-row justify-content-around align-items-center flex-wrap">
             <div class="col-lg-1 col-md-1 col-sm-12">
 
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 d-flex flex-column text-left">
+            <div class="col-lg-2 col-md-3 col-sm-12 d-flex flex-column text-left">
                 <div class="divFootLogo my-3 ms-4">
                     <img src="./public/img/footer-logo.png" alt="">
                 </div>
                 <div class="divFootP1 ms-4">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, commodi nostrum molestiae sapiente
-                        voluptatem totam earum deleniti numquam, sed quasi, exercitationem consequuntur in facilis
-                        laborum.</p>
+                        voluptatem totam earum deleniti numquam.</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 d-flex flex-column text-left ms-5">
+            <div class="MesColSpeciales col-lg-5 col-md-4 col-sm-12 d-flex flex-row flex-wrap">
+                <div class="d-flex flex-column text-left ms-5">
+                    <h5>Categories</h5>
+                    <h6>Women Collection</h6>
+                    <h6>Men Collection</h6>
+                    <h6>Child Collection</h6>
+                    <h6>Accessories</h6>
+                    <h6>Leather shoes</h6>
+                </div>
+                <div class="d-flex flex-column text-left ms-5">
+                    <h5>Customer</h5>
+                    <h6>Help and Support</h6>
+                    <h6>Shipping and delivery</h6>
+                    <h6>Payment method</h6>
+                    <h6>Terms and conditions</h6>
+                    <h6>Privacy policy</h6>
+                </div>
+                <div class="d-flex flex-column text-left ms-5">
+                    <h5>Company</h5>
+                    <h6>About company</h6>
+                    <h6>Our services</h6>
+                    <h6>Get the voucher</h6>
+                    <h6>Store locator</h6>
+                    <h6>Contact Us</h6>
+                </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
                 <div class="col-4 d-flex flex-column ms-6">
                     <div class="rowImgFootTitre">
                         <p><strong><span class="mx-1">FOLLOW</span><span class="mx-1">US</span><span
-                                    class="mx-1">ON</span><span class="mx-1">INSTAGRAM</span></strong></p>
+                                    class="mx-1">ON</span><span class="mx-1">MEDIAS</span></strong></p>
                     </div>
-                    <div class="rowImgFoot1 d-flex flex-row">
+                    <div class="rowImgFoot1 d-flex flex-row ">
                         <img src="./public/img/footer/infa-01.jpg" class="w-50 mx-1 my-1" alt="">
                         <img src="./public/img/footer/infa-02.jpg" class="w-50 mx-1 my-1" alt="">
                         <img src="./public/img/footer/infa-03.jpg" class="w-50 mx-1 my-1" alt="">
                         <img src="./public/img/footer/infa-04.jpg" class="w-50 mx-1 my-1" alt="">
                     </div>
-                    <div class="rowImgFoot2 d-flex flex-row">
+                    <div class="rowImgFoot2 d-flex flex-row ">
                         <img src="./public/img/footer/infa-05.jpg" class="w-50 mx-1 my-1" alt="">
                         <img src="./public/img/footer/infa-06.jpg" class="w-50 mx-1 my-1" alt="">
                         <img src="./public/img/footer/infa-07.jpg" class="w-50 mx-1 my-1" alt="">
@@ -452,21 +472,6 @@
             <div class="col-lg-1 col-md-1  col-sm-12">
 
             </div>
-            <!-- <div class="petitsTitres d-flex flex-row justify-content-between align-items-center">
-                    <p><strong>CATEGORIES</strong></p>
-                    <p><strong>CUSTOMER</strong></p>
-                    <p><strong>COMPANY</strong></p>
-                </div>
-                 -->
-            <!-- <div class="petitsP d-flex flex-row justify-content-center align-items-center">
-                    <div class="d-flex flex-column">
-                        <p>Women collection</p>
-                        <p>Men collection</p>
-                        <p>Child collection</p>
-                        <p>Accessories</p>
-                        <p>Leather shoes</p>
-                    </div>
-                </div> -->
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column px-8 bgFoot">
             <div class="divFootSombre d-flex flex-row justify-content-between align-items-center pt-3 pb-1 flex-wrap">

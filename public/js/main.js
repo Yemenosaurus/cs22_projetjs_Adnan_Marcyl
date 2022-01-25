@@ -54,6 +54,13 @@ window.addEventListener('scroll', () => {
 });
 
 
+// ## MODE JOUR / NUIT
+let boutonMoon = document.getElementsByClassName('Moon')[0];
+
+function myMoon() {
+    var element = document.body;
+    element.classList.toggle('modeMoon')
+}
 
 
 
@@ -78,7 +85,7 @@ divFlex.appendChild(h4);
 divFlex.appendChild(p);
 
 let divLigneImg = document.createElement('div');
-divLigneImg.classList = "ligneImgUne col-12 d-flex flex-row justify-content-around align-items-center my-5";
+divLigneImg.classList = "ligneImgUne col-lg-12 col-md-12 col-sm-4 d-flex flex-row justify-content-around align-items-center my-5";
 divFlex.appendChild(divLigneImg);
 
 let imgLigneUne1 = document.createElement('div');
@@ -234,7 +241,7 @@ p615.classList = "mt-n1"
 imgLigneUne5.appendChild(p615);
 
 let divLigneImg2 = document.createElement('div');
-divLigneImg2.classList = "ligneImgUne col-12 d-flex flex-row justify-content-around align-items-center my-3";
+divLigneImg2.classList = "ligneImgUne col-lg-12 col-md-12 col-sm-4 d-flex flex-row justify-content-around align-items-center my-3";
 divFlex.appendChild(divLigneImg2);
 
 let imgLigneDeux1 = document.createElement('div');

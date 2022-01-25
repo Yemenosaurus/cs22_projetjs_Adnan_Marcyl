@@ -15,9 +15,9 @@
 
 1. La barre de navigation doit rester fixe une fois qu'on dépasse le texte "womens" et avoir une couleur d'arrière-plan en noir avec le texte en blanc.
 
-2. Dans la navbar vous devez créer un toggle switch, lorsqu'il est désactivé, le site est en mode clair, quand il est activé, le site est en mode sombre
+2. Dans la navbar vous devez créer un toggle switch, lorsqu'il est désactivé, le site est en mode clair, quand il est activé, le site est en mode sombre.
 
-3. Dans l'icone du user dans la navbar, au click, il faut qu'un modal s'affiche avec une inscription ou un log in. (Modal bootstrap)
+3. Dans l'icone du user dans la navbar, au click, il faut qu'un modal s'affiche avec une inscription ou un log in. (Modal bootstrap).
 
 ### Recents products
 
