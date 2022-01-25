@@ -55,83 +55,6 @@ window.addEventListener('scroll', () => {
 
 
 
-// <!-- Button trigger modal -->
-// <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-//   Launch static backdrop modal
-// </button>
-
-// <!-- Modal -->
-// <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-//   <div class="modal-dialog">
-//     <div class="modal-content">
-//       <div class="modal-header">
-//         <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-//         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-//       </div>
-//       <div class="modal-body">
-//         ...
-//       </div>
-//       <div class="modal-footer">
-//         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-//         <button type="button" class="btn btn-primary">Understood</button>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-
-// ## MODAL
-// let btnUser = document.getElementsByTagName('button')[7];
-
-// let monModal = [
-//     {
-//         titre: "Bienvenue sur Hongo !",
-//         contenu: 
-//     }
-// ]
-
-// btnUser.addEventListener('click', (event) => {
-
-// })
-
-
-
-// btnUser.addEventListener('click', (event) => {
-//     let divModalFade = document.createElement('div');
-//     divModalFade.classList = "modal fade";
-//     divModalFade.setAttribute('id', 'staticBackdrop');
-//     divModalFade.setAttribute('data-bs-backdrop', 'static');
-//     divModalFade.setAttribute('data-bs-keyboard', 'false');
-//     divModalFade.setAttribute('tabindex', '-1');
-//     divModalFade.setAttribute('aria-labelledby', 'staticBackdropLabel');
-//     divModalFade.setAttribute('aria-hidden', 'true');
-//     let divModalDialog = document.createElement('div');
-//     divModalDialog.classList = "modal-dialog";
-//     divModalFade.appendChild(divModalDialog);
-//     let divModalContent = document.createElement('div');
-//     divModalContent.classList = "modal-content";
-//     divModalDialog.appendChild(divModalContent);
-//     let divModalHeader = document.createElement('div');
-//     let HeaderH5 = document.createElement('h5');
-//     HeaderH5.classList = "modal-title";
-//     HeaderH5.setAttribute('id', 'staticBackdropLabel');
-//     HeaderH5.textContent = "Bienvenue sur Hongo !";
-//     divModalHeader.classList = "modal-header"
-//     divModalHeader.appendChild(HeaderH5);
-//     let btnHeader = document.createElement('button');
-//     btnHeader.setAttribute('type', "button");
-//     btnHeader.setAttribute('data-bs-dismiss',"modal");
-//     btnHeader.setAttribute('data-bs-target',"#staticBackdrop");
-//     btnHeader.classList = "btn-close";
-//     divModalHeader.appendChild(btnHeader);
-//     divModalContent.appendChild(divModalHeader);
-//     let divModalBody = document.createElement("div");
-//     divModalContent.appendChild(divModalBody);
-//     let divModalFooter = document.createElement("div");
-//     divModalContent.appendChild(divModalFooter);
-// })
-
-
-
 
 
 
@@ -1328,19 +1251,13 @@ btnOptions9.addEventListener('click', () => {
 
 
 // // // ## SECTION TESTIMONIALS
-let carouselInner = document.getElementsByClassName('carousel-inner')[0];
 // // ## CIBLAGE BOUTONS
+let carouselInner = document.getElementsByClassName('carousel-inner')[0];
 let btnCarouBefore = document.getElementById('btnCarouselBefore');
 let btnCarouAfter = document.getElementById('btnCarouselAfter');
-
-// // let btnLeft = document.getElementsByClassName("btn-left")[0];
-// // let btnRight = document.getElementsByClassName("btn-right")[0];
-// // let testi = document.getElementsByClassName("testi-bg") // CARD
 let cardCarou = document.getElementsByClassName("maCardCarou");
-// // let testiHidden = document.getElementsByClassName("testi-hidden")[0] // ITEM
 let itemCarouCacher = document.getElementsByClassName('monItemCacher');
-// // testi = [...testi]
-// // let k = 0
+
 cardCarou = [...cardCarou]
 let a = 0;
 
