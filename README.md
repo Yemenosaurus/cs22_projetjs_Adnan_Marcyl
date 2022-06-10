@@ -4,6 +4,6 @@ Hello, here are my js project during my Web Developper's formation at Molengeek.
 
 
 
-<img src='./presentation/projectJS.jpg' width='200px'>
+<img src='./presentation/projectJS.jpg' style='width:200px;'>
                                                                                                                    
                                                                                           
