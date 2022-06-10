@@ -982,9 +982,17 @@ imgLigneDeux5.addEventListener('mouseleave', (event) => {
 
 
 
-// SPAN COEUR VERS NAV      
-let spanBadgeUn = document.getElementById('badgeUn')
+// SPAN COEUR VERS NAV
+let spanBadgeUn = document.createElement('span');
+spanBadgeUn.classList = "translate-middle badge rounded-pill bg-danger";
+spanBadgeUn.setAttribute('id', 'badgeUn');
+let ciblermontest = document.getElementById('badgeUn');
+let ciblermonbtn = document.getElementById('btntest');
+ciblermonbtn.appendChild(spanBadgeUn);
+
+// let spanBadgeUn = document.getElementById('badgeUn');
 let bdgeUnCount = 0;
+
 coeurImg11.addEventListener('click', () => {
     // spanBadgeUn.innerHTML += event.detail
     if (coeurImg11.classList.contains('text-dark')) {
@@ -1127,7 +1135,14 @@ coeurImg25.addEventListener('click', () => {
 })
 
 // SPAN CART VERS NAV
-let spanBadgeDeux = document.getElementById('badgeDeux')
+let spanBadgeDeux = document.createElement('span');
+spanBadgeDeux.classList = "translate-middle badge rounded-pill bg-danger";
+spanBadgeDeux.setAttribute('id', 'badgeDeux');
+let ciblermontest2 = document.getElementById('badgeDeux');
+let ciblermonbtn2 = document.getElementById('btntest2');
+ciblermonbtn2.appendChild(spanBadgeDeux);
+
+// let spanBadgeDeux = document.getElementById('badgeDeux')
 let bdgeDeuxCount = 0;
 btnOptions.addEventListener('click', () => {
     // spanBadgeUn.innerHTML += event.detail
